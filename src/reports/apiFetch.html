@@ -14,6 +14,9 @@
 <div>
     <h3 id="agrupacion">Category: Authentication & Authorization</h3>
     <h4 id="apikey">Verify:</h4>
+    <input type="text" id="inputSearchElement" placeholder="Ingrese el valor">
+    <button id="buscarButton">Buscar</button>
+    <div id="resultadoContainer"></div>
 </div>
     
     <script>
@@ -46,10 +49,8 @@
         console.log('El timpo de request es: ' + duration)  
 
         const Auth = entries.map(e => e.Auth)
-
         // Contamos canitdad de valores unicos en la categoria 'Auth'
         const countTypesAuth = [...new Set(Auth)]
-        
         // Contamos cantidad de cada valor encontrado en la categoria 'Auth'
         const countAuth = {}
         Auth.forEach(Auth => {
@@ -64,18 +65,30 @@
                 etiquetaH3.appendChild(paragraph)
             }
         }
-        //Funcion para verificar categoria
-        const searchElement = 'apiKey'
-        const verifyElement = Auth.includes(searchElement)
-        const resultadoSearch = document.createElement('p')
-        resultadoSearch.textContent = `¿La categoría "${searchElement}" está presente? ${verifyElement ? 'Sí' : 'No'}`
-        etiquetaH3.appendChild(resultadoSearch)
-
+        // Obtén referencias a los elementos del DOM
+        const inputSearchElement = document.getElementById('inputSearchElement');
+        const buscarButton = document.getElementById('buscarButton');
+        const resultadoContainer = document.getElementById('resultadoContainer');
+        // Agrega un evento de clic al botón
+        buscarButton.addEventListener('click', function() {
+            // Obtiene el valor del input
+            const inputElement = inputSearchElement.value;
+            // Realiza la búsqueda
+            const searchElement = inputElement;
+            const verifyElement = Auth.includes(searchElement);
+            // Crea y muestra el resultado
+            const resultadoSearch = document.createElement('p');
+            resultadoSearch.textContent = `¿La categoría "${searchElement}" está presente? ${verifyElement ? 'Sí' : 'No'}`;
+            // Limpia el contenedor antes de agregar el nuevo resultado
+            resultadoContainer.innerHTML = '';
+            resultadoContainer.appendChild(resultadoSearch);
+        });
 
         // console.log('Auth unica en grupo: ', countTypesAuth)
         console.log(countTypesAuth)  
+
         return datos
-        }
+        }   
 
     apiFetch()
 
