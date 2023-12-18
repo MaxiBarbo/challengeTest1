@@ -1,9 +1,9 @@
 name: Cucumber/Playwright Tests
 on:
   push:
-    branches: [ develop ]
+    branches: [ main ]
   pull_request:
-    branches: [ develop ]
+    branches: [ main ]
 jobs:
   test:
     timeout-minutes: 60
