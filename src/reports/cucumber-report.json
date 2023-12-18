@@ -1,0 +1,110 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sorting-items-on-saucedemo;verify-sorting-by-name",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify Sorting by Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 562581999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the SauceDemo website",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1521086899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user logs in with valid credentials user 'standard_user' and 'secret_sauce'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3933948599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user sorts the items by Name (A -> Z)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1907492000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the items should be sorted by Name (A -> Z)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1924834199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user changes the sorting to Name (Z -> A)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1918656500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the items should be sorted by Name (Z -> A)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1922405599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sorting-items-on-saucedemo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sorting Items on SauceDemo",
+    "tags": [],
+    "uri": "src\\features\\testTask.feature"
+  }
+]
