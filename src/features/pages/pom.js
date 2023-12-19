@@ -28,7 +28,8 @@ class Elements {
         await this.page.fill(this.passwordInputSelector, pass); 
     }
 
-    async selectSortOption(option) {
+    async selectSortOption(string1,string2) {
+        let option = string1.toLowerCase() + string2.toLowerCase()
         await this.sortContainer.selectOption(option);
     }
 

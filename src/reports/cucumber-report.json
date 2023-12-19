@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 562581999
+              "duration": 546817799
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1521086899
+              "duration": 700997699
             }
           },
           {
@@ -40,20 +40,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3933948599
+              "duration": 3934968600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "the user sorts the items by Name (A -> Z)",
+            "name": "the user sorts the items by Name 'A' -> 'Z'",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_testTask.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 1907492000
+              "duration": 1913547199
             }
           },
           {
@@ -66,20 +66,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1924834199
+              "duration": 1911234800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "the user changes the sorting to Name (Z -> A)",
+            "name": "the user changes the sorting to Name 'Z' -> 'A'",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_testTask.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 1918656500
+              "duration": 1911468500
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1922405599
+              "duration": 1918165299
             }
           }
         ],

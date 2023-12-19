@@ -5,20 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Task</title>
 </head>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <style>
-    h3, h4{color: blueviolet; font-size: 1em}
+        body{background-color: rgb(243, 243, 243);}
+    h2{color:black}    
+    h4,h3{color: #2867C3; font-size: 1em}
+    h1{color: grey; font-size: 1em;}
     p{color:black}    
+    .line{color: #999;background-color: #141414; height: 1px;margin: 20px 0}
     </style>
 <body>
-
 <div>
-    <h3 id="agrupacion">Category: Authentication & Authorization</h3>
-    <h4 id="apikey">Verify:</h4>
-    <input type="text" id="inputSearchElement" placeholder="Ingrese el valor">
+    <h2>API Test should do the following:</h3>
+    <h3>1. Call <a href="https://api.publicapis.org/entries">api.publicapis.org/entries</a></h3>
+    <h3 id="agrupacion">2. Read the response, find all objects with property “Category: Authentication & Authorization” </h3>
+    <h4 id="apikey">3. verify the number of objects where the property above appears</h4>
+    <input type="text" id="inputSearchElement" placeholder="Enter type Auth">
     <button id="buscarButton">Buscar</button>
     <div id="resultadoContainer"></div>
+    <div class="line"></div>
+    <div>
+        <h2>UI Test should do the following:</h2> 
+        <h3>1. Go to <a href="//www.saucedemo.com/">www.saucedemo.com</a></h3> 
+        <h3>2. Log in to the site. Verify that the items are sorted by Name ( A -> Z ).</h3>  
+        <h3>3. Change the sorting to Name ( Z -> A).</h3>
+        <h3>4. Verify that the items are sorted correctly.</h3>
+        <h3><iconify-icon icon="vscode-icons:file-type-cucumber" width="25" height="25"></iconify-icon>Report Test: <a href="index.html">Cucumber Dashboard</a></h3>
+        <h3><iconify-icon icon="devicon:github-wordmark" width="25" height="25"></iconify-icon><a href="https://github.com/MaxiBarbo/challengeTest1.git"> Public repository</a></h3>
+    </div>
 </div>
-    
     <script>
     document.addEventListener('DOMContentLoaded', function () {
     async function apiFetch() {
@@ -32,18 +47,16 @@
             const response = await fetch(apiTask, {
                 method: 'GET',
             });
-
             if (!response.ok) {
                 throw new Error('Error al obtener datos');
             }
-            
             const data = await response.json();
             datos = data
             entries = data.entries
-
         } catch (error) {
             console.error('Error al obtener datos:', error);
         }
+        //Calculamos tiempo el respueta al servidior (diferencia entre inicio y fin)
         let end = Date.now()
         let duration = end - start
         console.log('El timpo de request es: ' + duration)  
@@ -56,6 +69,7 @@
         Auth.forEach(Auth => {
             countAuth[Auth] = (countAuth[Auth] || 0) + 1
         });
+        
         // Funcion para imprimir los valores agrupados en pantalla
         for(const key in countAuth){
             if(countAuth.hasOwnProperty(key)){
@@ -65,6 +79,13 @@
                 etiquetaH3.appendChild(paragraph)
             }
         }
+        const total = document.createElement('h1');
+        total.textContent = `Total "Auth" count: ${Object.values(countAuth).reduce((acc, curr) => acc + curr, 0)}`;
+        etiquetaH3.appendChild(total);
+        //Tiempo en contar
+        const countTime = document.createElement('h1')
+        countTime.textContent = `Call request: ${duration}ms`
+        etiquetaH3.appendChild(countTime)
         // Obtén referencias a los elementos del DOM
         const inputSearchElement = document.getElementById('inputSearchElement');
         const buscarButton = document.getElementById('buscarButton');
@@ -78,7 +99,7 @@
             const verifyElement = Auth.includes(searchElement);
             // Crea y muestra el resultado
             const resultadoSearch = document.createElement('p');
-            resultadoSearch.textContent = `¿La categoría "${searchElement}" está presente? ${verifyElement ? 'Sí' : 'No'}`;
+            resultadoSearch.textContent = `¿La categoría "${searchElement}" está presente en Auth? ${verifyElement ? 'Sí' : 'No'}`;
             // Limpia el contenedor antes de agregar el nuevo resultado
             resultadoContainer.innerHTML = '';
             resultadoContainer.appendChild(resultadoSearch);

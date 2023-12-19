@@ -3,12 +3,12 @@ const report = require("multiple-cucumber-html-reporter");
 report.generate({
   jsonDir: "src/reports",
   reportPath: "./src/reports",
-  reportName: "Escenarios Cucumber",
-  pageTitle: "Pigmeo Report Test",
+  reportName: "Test task for a Senior Automation QA Engineer role",
+  pageTitle: "Test Task report",
   metadata: {
     browser: {
       name: "chrome",
-      version: "119.0.6045.124 (Build oficial) (64 bits)",
+      version: "119.0.6045.124 (64 bits)",
     },
     device: "HP Pavilion Gaming Laptop 16",
     platform: {
@@ -19,12 +19,12 @@ report.generate({
   customData: {
     title: "Run info",
     data: [
-      { label: "Project", value: "Pigmeo e-wallet" },
-      { label: "Type", value: "Smoke Test" },
-      { label: "Version", value: "1.2.3" },
-      { label: "Sprint", value: "N°1" },
-      { label: "Execution Start Time", value: "Nov 14th 2023" },
-      { label: "Execution End Time", value: "Nov 14th 2023" },
+      { label: "Project", value: "Test Task" },
+      { label: "Type", value: "E2E scenario Gherkin" },
+      { label: "Version", value: "1.0" },
+      { label: "CI/CD pipeline", value: "GitHub Actions" },
+      { label: "Execution Start Time", value: "Nov 19th 2023" },
+      { label: "Execution End Time", value: "Nov 19th 2023" },
     ],
   },
 });

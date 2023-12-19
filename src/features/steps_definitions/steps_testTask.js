@@ -15,7 +15,6 @@ Before( { timeout: 10000 }, async () => {
 
 let URL = 'https://www.saucedemo.com/'
 
-
 Given('the user is on the SauceDemo website', async () => {
   await page.goto(URL)
 });
@@ -27,8 +26,8 @@ When('the user logs in with valid credentials user {string} and {string}', async
   await page.locator('[data-test="login-button"]').click();
 });
 
-When('the user sorts the items by Name \\(A -> Z)', async () => {
-  POM.selectSortOption('az')
+When('the user sorts the items by Name {string} -> {string}', async (string1, string2) => {
+  POM.selectSortOption(string1,string2)
   await page.waitForTimeout(segundos)
 });
 
@@ -37,8 +36,8 @@ Then('the items should be sorted by Name \\(A -> Z)', async () => {
   await page.waitForTimeout(segundos)
 });
 
-When('the user changes the sorting to Name \\(Z -> A)', async () => {
-  POM.selectSortOption('za')
+When('the user changes the sorting to Name {string} -> {string}', async (string1,string2) => {
+  POM.selectSortOption(string1,string2)
   await page.waitForTimeout(segundos)
 });
 
