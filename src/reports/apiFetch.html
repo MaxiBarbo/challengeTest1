@@ -7,7 +7,8 @@
 </head>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <style>
-        body{background-color: rgb(243, 243, 243);}
+    body{background-color: rgb(243, 243, 243);}
+    button{background-color: #3DA35D;color: white;}
     h2{color:black}    
     h4,h3{color: #2867C3; font-size: 1em}
     h1{color: grey; font-size: 1em;}
@@ -18,7 +19,7 @@
 <div>
     <h2>API Test should do the following:</h3>
     <h3>1. Call <a href="https://api.publicapis.org/entries">api.publicapis.org/entries</a></h3>
-    <h3 id="agrupacion">2. Read the response, find all objects with property “Category: Authentication & Authorization” </h3>
+    <h3 id="agrupacion">2. <button id="apiCall">Read the response</button> ,find all objects with property “Category: Authentication & Authorization” </h3>
     <h4 id="apikey">3. verify the number of objects where the property above appears</h4>
     <input type="text" id="inputSearchElement" placeholder="Enter type Auth">
     <button id="buscarButton">Buscar</button>
@@ -107,11 +108,15 @@
 
         // console.log('Auth unica en grupo: ', countTypesAuth)
         console.log(countTypesAuth)  
+        console.log(Auth)
 
         return datos
         }   
 
-    apiFetch()
+        const clickBUtton = document.getElementById('apiCall')
+        clickBUtton.addEventListener('click', async ()=>{
+            const datos = await apiFetch()
+        })
 
     })   
     </script>
