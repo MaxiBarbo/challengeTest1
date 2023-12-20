@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HJ4BD0P8PQHBBJDMZ0EENN59
-  version: v2.0
----
-
 # Proyecto de Pruebas con Cucumber
 
 Este proyecto utiliza Cucumber para escribir y ejecutar pruebas de aceptación en lenguaje natural. Las pruebas están escritas en Gherkin y se ejecutan utilizando el framework de Cucumber.
