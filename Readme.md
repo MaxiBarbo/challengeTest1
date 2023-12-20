@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HJ4BD0P8PQHBBJDMZ0EENN59
+  version: v2.0
+---
+
 # Proyecto de Pruebas con Cucumber
 
 Este proyecto utiliza Cucumber para escribir y ejecutar pruebas de aceptación en lenguaje natural. Las pruebas están escritas en Gherkin y se ejecutan utilizando el framework de Cucumber.
@@ -42,9 +48,16 @@ Para ejecutar el reporter, utiliza el siguiente comando:
 npm run reporter
 ```
 
-## Estructura del test
+## Estructura del Test
 
+> src /
 - features: Contiene los archivos .feature que describen los escenarios de prueba en Gherkin.
 - helper: contiene un reporter.ts que se ejecuta luego de npm run test
 - step_definitions: Contiene las clases de definición de pasos de Cucumber.
 - report: Contiene los informes de ejecución después de correr las pruebas.
+
+## CI/CD con GitHub Actions
+
+El test incluye automatización de CI/CD utilizando GitHub Actions. Los flujos de trabajo se definen en el directorio .github/workflows. El flujo de trabajo principal se encarga de ejecutar las pruebas cada vez que se realiza un push a la rama master.
+
+> https://github.com/MaxiBarbo/challengeTest1/actions
