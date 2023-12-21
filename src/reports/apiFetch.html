@@ -13,19 +13,22 @@
     h4,h3{color: #2867C3; font-size: 1em}
     h1{color: grey; font-size: 1em;}
     p{color:black}    
-    .line{color: #999;background-color: #141414; height: 1px;margin: 20px 0}
+    .line{color: #999;background-color: #141414; height: 1px;margin: 20px}
+    /* .data1{width: 390px; height: 850px;border: 2px solid black; padding: 1rem;} */
     </style>
 <body>
-<div>
-    <h2>API Test should do the following:</h3>
-    <h3>1. Call <a href="https://api.publicapis.org/entries">api.publicapis.org/entries</a></h3>
-    <h3 id="agrupacion">2. <button id="apiCall">Read the response</button> ,find all objects with property “Category: Authentication & Authorization” </h3>
-    <h4 id="apikey">3. verify the number of objects where the property above appears</h4>
-    <input type="text" id="inputSearchElement" placeholder="Enter type Auth">
-    <button id="buscarButton">Buscar</button>
-    <div id="resultadoContainer"></div>
-    <div class="line"></div>
+<div class="data1">
     <div>
+        <h2>API Test should do the following:</h3>
+        <h3>1. Call <a href="https://api.publicapis.org/entries">api.publicapis.org/entries</a></h3>
+        <h3 id="agrupacion">2. <button id="apiCall">Read the response</button> ,find all objects with property “Category: Authentication & Authorization” </h3>
+        <h4 id="apikey">3. verify the number of objects where the property above appears</h4>
+        <input type="text" id="inputSearchElement" placeholder="Enter type Auth">
+        <button id="buscarButton">Buscar</button>
+        <div id="resultadoContainer"></div>
+    </div>
+        <div class="line"></div>
+    <div class="data2">
         <h2>UI Test should do the following:</h2> 
         <h3>1. Go to <a href="//www.saucedemo.com/">www.saucedemo.com</a></h3> 
         <h3>2. Log in to the site. Verify that the items are sorted by Name ( A -> Z ).</h3>  
@@ -35,7 +38,9 @@
         <h3><iconify-icon icon="devicon:github-wordmark" width="25" height="25"></iconify-icon><a href="https://github.com/MaxiBarbo/challengeTest1.git"> Public repository</a></h3>
     </div>
 </div>
-    <script>
+
+</body>
+<script>
     document.addEventListener('DOMContentLoaded', function () {
     async function apiFetch() {
     let apiTask = 'https://api.publicapis.org/entries'
@@ -120,5 +125,4 @@
 
     })   
     </script>
-</body>
 </html>

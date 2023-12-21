@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 546817799
+              "duration": 669954899
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 4,
             "name": "the user is on the SauceDemo website",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:19"
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 700997699
+              "duration": 1698674300
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 5,
             "name": "the user logs in with valid credentials user 'standard_user' and 'secret_sauce'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:23"
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 3934968600
+              "duration": 3977223199
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 8,
             "name": "the user sorts the items by Name 'A' -> 'Z'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:30"
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:29"
             },
             "result": {
               "status": "passed",
-              "duration": 1913547199
+              "duration": 1912201099
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 9,
             "name": "the items should be sorted by Name (A -> Z)",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:35"
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1911234800
+              "duration": 1915474000
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 11,
             "name": "the user changes the sorting to Name 'Z' -> 'A'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:40"
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1911468500
+              "duration": 1912252699
             }
           },
           {
@@ -88,11 +88,108 @@
             "line": 12,
             "name": "the items should be sorted by Name (Z -> A)",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:45"
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:44"
             },
             "result": {
               "status": "passed",
-              "duration": 1918165299
+              "duration": 1908937799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sorting-items-on-saucedemo;verivy-sorting-by-price",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verivy Sorting by Price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 534355700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the SauceDemo website",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 768820100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user logs in with valid credentials user 'standard_user' and 'secret_sauce'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3925897599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "the user changes the sorting to price 'low' -> 'high'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1906603200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the order should be sorted by price (low -> high)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1914139299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the user changes the items to price 'high' -> 'low'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1917091500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the order items be sorted by price (high -> low)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1913797399
             }
           }
         ],

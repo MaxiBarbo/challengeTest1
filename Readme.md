@@ -40,7 +40,7 @@ Para ejecutar las pruebas, utiliza el siguiente comando:
 npm run test
 ```
 
-## Informe de ejecion del Reporter
+## Informe de ejecuion del Reporter
 
 Para ejecutar el reporter, utiliza el siguiente comando:
 
@@ -51,6 +51,7 @@ npm run reporter
 ## Estructura del Test
 
 > src /
+
 - features: Contiene los archivos .feature que describen los escenarios de prueba en Gherkin.
 - helper: contiene un reporter.ts que se ejecuta luego de npm run test
 - step_definitions: Contiene las clases de definición de pasos de Cucumber.

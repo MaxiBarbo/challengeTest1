@@ -45,3 +45,23 @@ Then('the items should be sorted by Name \\(Z -> A)', async () => {
   POM.verifyOrderZA()
   await page.waitForTimeout(segundos);
 });
+
+When('the user changes the sorting to price {string} -> {string}', async (string1,string2) => {
+  POM.selectPriceOptionLow(string1,string2)
+  await page.waitForTimeout(segundos)
+});
+
+Then('the order should be sorted by price \\(low -> high)', async () => {
+  POM.verifyOrderByPriceLowToHigh()
+  await page.waitForTimeout(segundos);
+});
+
+When('the user changes the items to price {string} -> {string}', async (string1,string2) => {
+  POM.selectPriceOptionHigh(string1,string2)
+  await page.waitForTimeout(segundos)
+});
+
+Then('the order items be sorted by price \\(high -> low)', async () => {
+  POM.verifyOrderByPriceHighToLow()
+  await page.waitForTimeout(segundos);
+});

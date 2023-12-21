@@ -8,7 +8,7 @@ report.generate({
   metadata: {
     browser: {
       name: "chrome",
-      version: "119.0.6045.124 (64 bits)",
+      version: "Chromium",
     },
     device: "HP Pavilion Gaming Laptop 16",
     platform: {
@@ -22,9 +22,11 @@ report.generate({
       { label: "Project", value: "Test Task" },
       { label: "Type", value: "E2E scenario Gherkin" },
       { label: "Version", value: "1.0" },
-      { label: "CI/CD pipeline", value: "GitHub Actions" },
+      { label: "CI / CD pipeline", value: "GitHub Actions" },
+      { label: "Repository", value: "https://github.com/MaxiBarbo/challengeTest1.git" },
       { label: "Execution Start Time", value: "Nov 19th 2023" },
       { label: "Execution End Time", value: "Nov 19th 2023" },
+      { label: "Web", value: "https://www.saucedemo.com/" },
     ],
   },
 });
