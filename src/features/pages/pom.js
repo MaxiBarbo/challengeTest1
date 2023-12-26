@@ -12,6 +12,12 @@ class Elements {
         this.mensaje = page.getByText('Tu transferencia se realizó con éxito')
         this.saldo = page.locator('//*[@id="root"]/main/div[1]/div[2]/div/p');
         this.sortContainer = page.locator('[data-test="product_sort_container"]');
+        this.value_subtotal = page.locator('.summary_subtotal_label')
+        this.value_tax = page.locator('.summary_tax_label')
+        this.totalValue = page.locator('.summary_total_label')
+        this.firstName = 'input[name="firstName"]'
+        this.lastName = 'input[name="lastName"]'
+        this.postalCode = 'input[name="postalCode"]'
     }
 
     async enterUsername(username) {
@@ -20,6 +26,12 @@ class Elements {
     
     async enterPassword(password) {
         await this.page.fill(this.passwordInputSelector, password);
+    }
+
+    async checkoutData(firstname, lastname, postalcode){
+        await this.page.fill(this.firstName, firstname)
+        await this.page.fill(this.lastName, lastname)
+        await this.page.fill(this.postalCode, postalcode)
     }
 
     async loginUser(email,pass){
@@ -88,6 +100,54 @@ class Elements {
         
         console.log('Original Items:', items);
         console.log('Sorted Items:', sortedItems);
+    }
+
+    async addItemCart(producto){
+        await this.page.locator(`[data-test="add-to-cart-sauce-labs-${producto}"]`).click()
+    }
+
+    async verifyPrice(precio){
+        const selectorPrecio = await this.page.getByText(precio).first().textContent();
+        expect(selectorPrecio).contain(precio); 
+
+        console.log(selectorPrecio)
+    }
+
+    async addMultipleItemsOnCart(){
+        const productos = [
+            'add-to-cart-sauce-labs-backpack',
+            'add-to-cart-sauce-labs-bike-light',
+            'add-to-cart-sauce-labs-bolt-t-shirt',
+            'add-to-cart-sauce-labs-fleece-jacket',
+            'add-to-cart-sauce-labs-onesie',
+            'add-to-cart-test.allthethings()-t-shirt-(red)'
+        ];
+        for (const producto of productos) {
+            const selector = `[data-test="${producto}"]`;
+            await this.page.locator(selector).click();
+        }
+    }
+
+    async verifyPriceItemsCart(){
+    // Obtener los precios de los elementos en el carrito
+    const preciosEnCarrito = await this.page.$$eval('.inventory_item_price', precios =>
+        precios.map(precio => parseFloat(precio.innerText.replace('$', '')))
+    );
+    // Sumar los precios
+    const total = preciosEnCarrito.reduce((suma, precio) => suma + precio, 0);
+
+    const subTotal = await this.value_subtotal.textContent()
+    const tax = await this.value_tax.textContent()
+    let totalValueAmount = await this.totalValue.textContent()
+
+    let totalAmount = totalValueAmount.match(/\d+\.\d+/)    
+    const subTotalValue = subTotal.match(/\d+\.\d+/)
+    const taxValue = tax.match(/\d+\.\d+/)    
+
+    expect(parseFloat(totalAmount[0])).to.equal(parseFloat(taxValue[0]) + parseFloat(total))
+
+    console.log(preciosEnCarrito)
+    console.log(`Total en carrito: sub total: ${total} + tax: ${taxValue[0]} = Total: ${totalAmount[0]}`);
     }
 }
 module.exports = Elements;

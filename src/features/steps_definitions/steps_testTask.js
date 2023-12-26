@@ -2,21 +2,26 @@ const { Given, When, Then, Before } = require('@cucumber/cucumber');
 const { expect, assert } = require('chai');
 const { chromium } = require('playwright');
 const Elements = require('../pages/pom')
+const Functions = require('../pages/api_response')
+require('dotenv').config()
 
 let browser, page;
 let POM;
-let segundos = 1900
+let functions
+let segundos = 2000
+let API_URL
+let propCategory
 
 Before( { timeout: 10000 }, async () => {
   browser = await chromium.launch({ headless: false });
   page = await browser.newPage();
   POM = new Elements(page)
+  functions = new Functions(page)
 });
 
-let URL = 'https://www.saucedemo.com/'
-
+//1er escenario de pruebas
 Given('the user is on the SauceDemo website', async () => {
-  await page.goto(URL)
+  await page.goto(process.env.URL)
 });
 
 When('the user logs in with valid credentials user {string} and {string}', async (name,password) => {
@@ -64,4 +69,27 @@ When('the user changes the items to price {string} -> {string}', async (string1,
 Then('the order items be sorted by price \\(high -> low)', async () => {
   POM.verifyOrderByPriceHighToLow()
   await page.waitForTimeout(segundos);
+});
+
+// 2do escenario de pruebas
+
+Given('make a get request to the api: {string}', async (URL) => {
+  API_URL = URL
+  await page.waitForTimeout(segundos);
+});
+
+
+When('read de response, find all objects with property {string}', async (category) => {
+  propCategory = category
+  await page.waitForTimeout(segundos);
+});
+
+When('compare, count and verify the number of object where the property Authentication & Authorization', async () => {
+  await functions.apiFetch(API_URL,propCategory)
+  await page.waitForTimeout(segundos);
+});
+
+Then('print found object to control', async () => {
+  let dataApi = await functions.apiDataAuth(API_URL,propCategory)
+  await page.waitForTimeout(4000);
 });

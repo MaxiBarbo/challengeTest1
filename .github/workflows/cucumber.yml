@@ -24,4 +24,4 @@ jobs:
       with:
         name: Report
         path: src/reports
-        retention-days: 2
+        retention-days: 30
