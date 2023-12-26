@@ -60,8 +60,8 @@ class Elements {
         const sortedItems = [...items].sort();
         expect(JSON.stringify(items)).to.equal(JSON.stringify(sortedItems));
 
-        console.log('Original Items:', items);
-        console.log('Sorted Items:', sortedItems);
+        console.log('Original order Items:', items);
+        console.log('Sorted Items by order A => Z:', sortedItems);
     }
 
     async verifyOrderZA(){
@@ -70,8 +70,8 @@ class Elements {
         const sortedItems = [...items].sort((a, b) => b.localeCompare(a));
         expect(JSON.stringify(items)).to.equal(JSON.stringify(sortedItems));
 
-        console.log('Original Items:', items);
-        console.log('Sorted Items:', sortedItems);
+        console.log('Original order Items:', items);
+        console.log('Sorted Items by order Z => A:', sortedItems);
     }
 
     async verifyOrderByPriceLowToHigh() {
@@ -84,8 +84,8 @@ class Elements {
         const sortedItems = [...items].sort((a, b) => a.price - b.price);
         expect(JSON.stringify(items)).to.equal(JSON.stringify(sortedItems));
 
-        console.log('Original Items:', items);
-        console.log('Sorted Items:', sortedItems);
+        console.log('Original order Items:', items);
+        console.log('Sorted Items by price Low => High:', sortedItems);
     }
 
     async verifyOrderByPriceHighToLow() {
@@ -98,8 +98,8 @@ class Elements {
         const sortedItems = [...items].sort((a, b) => b.price - a.price);
         expect(JSON.stringify(items)).to.equal(JSON.stringify(sortedItems));
         
-        console.log('Original Items:', items);
-        console.log('Sorted Items:', sortedItems);
+        console.log('Original order Items:', items);
+        console.log('Sorted Items by price High = Low:', sortedItems);
     }
 
     async addItemCart(producto){

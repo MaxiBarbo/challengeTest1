@@ -10,4 +10,4 @@ Scenario Outline: Request Api
 Examples:
     | Category | 
     | Auth     |    
-    | HTTPS    |
+    

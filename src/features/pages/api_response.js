@@ -41,8 +41,7 @@ class Functions {
             })
             entries.forEach(e => { expect(e).to.have.property(category)})
 
-            console.log(`Category tipes: ${category}: ${countTypesAuth}`);  
-            console.log(countAuth)     
+            console.log(`Category tipes: ${category}: ${countTypesAuth}`);       
         }
 
         async apiDataAuth(URL,category){

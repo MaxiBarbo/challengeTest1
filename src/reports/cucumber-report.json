@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 657811500
+              "duration": 641452399
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2023290799
+              "duration": 2031019299
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2011572600
+              "duration": 2019336599
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3450923299
+              "duration": 3670500100
             }
           },
           {
@@ -66,83 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4848365899
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api-Request",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "api-test-task;request-api",
-        "keyword": "Scenario Outline",
-        "line": 13,
-        "name": "Request Api",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 595576900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "make a get request to the api: 'https://api.publicapis.org/entries'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:76"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2007104300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "read de response, find all objects with property 'HTTPS'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2007169400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "compare, count and verify the number of object where the property Authentication & Authorization",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:87"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3454857999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "print found object to control",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4867396900
+              "duration": 4814167600
             }
           }
         ],
@@ -177,7 +101,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 585690899
+              "duration": 752315299
             }
           },
           {
@@ -190,7 +114,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1492346300
+              "duration": 652854099
             }
           },
           {
@@ -203,7 +127,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4131458899
+              "duration": 4205094599
             }
           },
           {
@@ -216,7 +140,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2007344199
+              "duration": 2018892800
             }
           },
           {
@@ -229,7 +153,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2006976199
+              "duration": 2019092000
             }
           },
           {
@@ -242,7 +166,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2011636100
+              "duration": 2019672700
             }
           },
           {
@@ -255,7 +179,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2008859099
+              "duration": 2011118499
             }
           }
         ],
@@ -279,7 +203,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 598547999
+              "duration": 671149700
             }
           },
           {
@@ -292,7 +216,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1475437500
+              "duration": 608861099
             }
           },
           {
@@ -305,7 +229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4129198500
+              "duration": 4164134899
             }
           },
           {
@@ -318,7 +242,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2012841500
+              "duration": 2027035699
             }
           },
           {
@@ -331,7 +255,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2007921600
+              "duration": 2003689499
             }
           },
           {
@@ -344,7 +268,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2007194300
+              "duration": 2010711199
             }
           },
           {
@@ -357,7 +281,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2017035399
+              "duration": 2012887799
             }
           }
         ],
