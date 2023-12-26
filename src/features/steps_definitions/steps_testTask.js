@@ -13,7 +13,7 @@ let API_URL
 let propCategory
 
 Before( { timeout: 10000 }, async () => {
-  browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ });
   page = await browser.newPage();
   POM = new Elements(page)
   functions = new Functions(page)
