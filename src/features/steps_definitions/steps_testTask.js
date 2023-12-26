@@ -79,7 +79,7 @@ Given('make a get request to the api: {string}', async (URL) => {
 });
 
 
-When('read de response, find all objects with property {string}', async (category) => {
+When('read the response and find all objects with property {string}', async (category) => {
   propCategory = category
   await page.waitForTimeout(segundos);
 });

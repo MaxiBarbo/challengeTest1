@@ -14,7 +14,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 641452399
+              "duration": 446912299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 452983700
             }
           },
           {
@@ -27,20 +35,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2031019299
+              "duration": 2024858800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "read de response, find all objects with property 'Auth'",
+            "name": "read the response and find all objects with property 'Auth'",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
             },
             "result": {
               "status": "passed",
-              "duration": 2019336599
+              "duration": 2009398000
             }
           },
           {
@@ -53,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3670500100
+              "duration": 3361079400
             }
           },
           {
@@ -66,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4814167600
+              "duration": 4907056800
             }
           }
         ],
@@ -87,6 +95,560 @@
     "uri": "src\\features\\API_test_task.feature"
   },
   {
+    "description": "    Como usuario de la tienda\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tiena",
+    "elements": [
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Agregar un articulo al carrito y verificar su precio",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 408269999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 396640699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2632966100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "agrego el siguiente item 'backpack' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2012711400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "verifico que el precio '$29.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2013049800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "el item se agrega al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2012314299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Agregar un articulo al carrito y verificar su precio",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401176699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 390988600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1654902199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "agrego el siguiente item 'bike-light' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2012868600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "verifico que el precio '$9.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2010604799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "el item se agrega al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2008841599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Agregar un articulo al carrito y verificar su precio",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 392998000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 392037800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1583738200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "agrego el siguiente item 'bolt-t-shirt' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2002473500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "verifico que el precio '$15.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2009046500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "el item se agrega al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014855700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Agregar un articulo al carrito y verificar su precio",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 411084200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 415281999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1575260100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "agrego el siguiente item 'fleece-jacket' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2007106000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "verifico que el precio '$49.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2015306000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "el item se agrega al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2013882700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Agregar un articulo al carrito y verificar su precio",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 403181300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 428621899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1565122299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "agrego el siguiente item 'onesie' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2009179899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "verifico que el precio '$7.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2013338899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "el item se agrega al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2012270699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-varios-articulos-al-carrito-y-proceder-al-pago",
+        "keyword": "Scenario Outline",
+        "line": 33,
+        "name": "Agregar varios articulos al carrito y proceder al pago",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 434724699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 402728600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1576865999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "que he agregado todos los productos de la lista al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4011876399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "ingreso al carrito de compras",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4099417199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "ingreso datos personales para completar el checkout 'Lali', 'Marin', '1986'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4064129299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "verifico el valor total del saldo en el carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2008862900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "confirmo la compra en 'finish'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2057229800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "recibo la confirmacion exitosa 'Thank you for your order!'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2013047899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart-checkout",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verificar-funcionamiento-del-carrito",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Verificar funcionamiento del carrito",
+    "tags": [],
+    "uri": "src\\features\\Cart_Checkout.feature"
+  },
+  {
     "description": "",
     "elements": [
       {
@@ -101,7 +663,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 752315299
+              "duration": 405248499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 414430500
             }
           },
           {
@@ -114,7 +684,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 652854099
+              "duration": 474194799
             }
           },
           {
@@ -127,7 +697,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4205094599
+              "duration": 4115466899
             }
           },
           {
@@ -140,7 +710,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2018892800
+              "duration": 2010179600
             }
           },
           {
@@ -153,7 +723,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2019092000
+              "duration": 2017466000
             }
           },
           {
@@ -166,7 +736,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2019672700
+              "duration": 2013029399
             }
           },
           {
@@ -179,7 +749,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2011118499
+              "duration": 2016338600
             }
           }
         ],
@@ -203,7 +773,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 671149700
+              "duration": 446829199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 469980500
             }
           },
           {
@@ -216,7 +794,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 608861099
+              "duration": 503100600
             }
           },
           {
@@ -229,7 +807,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4164134899
+              "duration": 4099647600
             }
           },
           {
@@ -242,7 +820,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2027035699
+              "duration": 2008108999
             }
           },
           {
@@ -255,7 +833,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2003689499
+              "duration": 2014270699
             }
           },
           {
@@ -268,7 +846,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2010711199
+              "duration": 2009701200
             }
           },
           {
@@ -281,7 +859,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2012887799
+              "duration": 2007389800
             }
           }
         ],

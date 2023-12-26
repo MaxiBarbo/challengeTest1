@@ -106,11 +106,11 @@ class Elements {
         await this.page.locator(`[data-test="add-to-cart-sauce-labs-${producto}"]`).click()
     }
 
-    async verifyPrice(precio){
+    async verifyPrice(precio,item){
         const selectorPrecio = await this.page.getByText(precio).first().textContent();
         expect(selectorPrecio).contain(precio); 
 
-        console.log(selectorPrecio)
+        console.log(`Producto: ${item}, Precio: ${selectorPrecio}`)
     }
 
     async addMultipleItemsOnCart(){
@@ -146,7 +146,7 @@ class Elements {
 
     expect(parseFloat(totalAmount[0])).to.equal(parseFloat(taxValue[0]) + parseFloat(total))
 
-    console.log(preciosEnCarrito)
+    // console.log(preciosEnCarrito)
     console.log(`Total en carrito: sub total: ${total} + tax: ${taxValue[0]} = Total: ${totalAmount[0]}`);
     }
 }

@@ -1,22 +1,22 @@
 const { Given, When, Then, Before } = require('@cucumber/cucumber');
 const { expect, assert } = require('chai');
 const { chromium } = require('playwright');
-const Elements = require('../../features/pages/pom')
+const Elements = require('../pages/pom')
 require('dotenv').config()
 
 let browser, page;
-let POM;
+let POM
 let segundos = 2000
+let item
 
 Before( { timeout: 10000 }, async () => {
-    browser = await chromium.launch({ headless: false });
+    browser = await chromium.launch({ headless: true });
     page = await browser.newPage();
     POM = new Elements(page)
 });
 
 Given('que estoy en la pagina de inicio de sesion de la tienda online', async () => {
     await page.goto(process.env.URL)
-    // await page.waitForTimeout(segundos)
     POM.loginUser(process.env.USER,process.env.PASS)
     await page.waitForTimeout(1000)
     await page.locator('[data-test="login-button"]').click();
@@ -24,18 +24,16 @@ Given('que estoy en la pagina de inicio de sesion de la tienda online', async ()
 
 // 1er escenario de prueba
 
-When('agrego el siguiente {string} al carrito', async (producto) => {
-    // expect(process.env.URL).to.include('/inventory.html')
+When('agrego el siguiente item {string} al carrito', async (producto) => {
+    item = producto
     await page.waitForTimeout(segundos)
     POM.addItemCart(producto)
 
-    console.log(producto)
 });
 
-When('verifico el {string} indicado por la tienda', async (precio) => {
+When('verifico que el precio {string} sea el indicado por la tienda', async (precio) => {
     await page.waitForTimeout(segundos)
-    POM.verifyPrice(precio)
-    
+    POM.verifyPrice(precio,item)
 });
 
 Then('el item se agrega al carrito', async () => {
@@ -45,7 +43,7 @@ Then('el item se agrega al carrito', async () => {
 
 // 2do escenario de prueba
 
-When('que he agregado varios productos al carrito', async () => {
+When('que he agregado todos los productos de la lista al carrito', async () => {
     await page.waitForTimeout(segundos)
     // expect(process.env.URL).to.include('inventory.html')
     await page.waitForTimeout(segundos)
