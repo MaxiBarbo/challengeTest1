@@ -20,6 +20,7 @@ Given('que estoy en la pagina de inicio de sesion de la tienda online', async ()
     POM.loginUser(process.env.USER,process.env.PASS)
     await page.waitForTimeout(1000)
     await page.locator('[data-test="login-button"]').click();
+    await page.waitForTimeout(segundos)
 });
 
 // 1er escenario de prueba
