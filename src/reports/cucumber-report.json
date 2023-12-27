@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 759652600
+              "duration": 772952399
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 580290000
+              "duration": 623153600
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2023967000
+              "duration": 2027271600
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2007942999
+              "duration": 2007107000
             }
           },
           {
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3485400999
+              "duration": 3476367799
             }
           },
           {
@@ -74,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4902948899
+              "duration": 4858001400
             }
           },
           {
@@ -82,7 +82,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 137300
+              "duration": 252300
             }
           }
         ],
@@ -100,7 +100,7 @@
     "keyword": "Feature",
     "name": "Api test task",
     "tags": [],
-    "uri": "src\\features\\api\\API_test_task.feature"
+    "uri": "src\\features\\scenarios\\api-test\\API_test_task.feature"
   },
   {
     "description": "    Como usuario de la tienda\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tiena",
@@ -117,7 +117,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 676114199
+              "duration": 775005199
             }
           },
           {
@@ -125,7 +125,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 785730399
+              "duration": 559107299
             }
           },
           {
@@ -138,7 +138,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1863812199
+              "duration": 2827372300
             }
           },
           {
@@ -151,7 +151,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2925088299
+              "duration": 2925260399
             }
           },
           {
@@ -164,7 +164,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1913550400
+              "duration": 1909017499
             }
           },
           {
@@ -177,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1908108399
+              "duration": 1909870500
             }
           },
           {
@@ -185,7 +185,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 121199
+              "duration": 111400
             }
           }
         ],
@@ -209,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 728819099
+              "duration": 617965799
             }
           },
           {
@@ -217,7 +217,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 559180999
+              "duration": 626908400
             }
           },
           {
@@ -230,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1793681300
+              "duration": 1977899500
             }
           },
           {
@@ -243,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2915955600
+              "duration": 2915871099
             }
           },
           {
@@ -256,7 +256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1915584900
+              "duration": 1912461499
             }
           },
           {
@@ -269,7 +269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1913756800
+              "duration": 1903334699
             }
           },
           {
@@ -277,7 +277,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75900
+              "duration": 87900
             }
           }
         ],
@@ -301,7 +301,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 719216699
+              "duration": 669457200
             }
           },
           {
@@ -309,7 +309,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 581503600
+              "duration": 568525099
             }
           },
           {
@@ -322,7 +322,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1921122999
+              "duration": 2282791899
             }
           },
           {
@@ -335,7 +335,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2920469699
+              "duration": 2931502200
             }
           },
           {
@@ -348,7 +348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1917275600
+              "duration": 1902928000
             }
           },
           {
@@ -361,7 +361,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1910120200
+              "duration": 1917251000
             }
           },
           {
@@ -369,7 +369,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 65099
+              "duration": 78299
             }
           }
         ],
@@ -393,7 +393,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 854394500
+              "duration": 652190799
             }
           },
           {
@@ -401,7 +401,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 587425400
+              "duration": 646630599
             }
           },
           {
@@ -414,7 +414,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1970241400
+              "duration": 1780577700
             }
           },
           {
@@ -427,7 +427,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2928533199
+              "duration": 2915976199
             }
           },
           {
@@ -440,7 +440,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1914414599
+              "duration": 1905697100
             }
           },
           {
@@ -453,7 +453,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1914649700
+              "duration": 1914183300
             }
           },
           {
@@ -461,7 +461,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 51200
+              "duration": 82700
             }
           }
         ],
@@ -485,7 +485,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 703295700
+              "duration": 675878399
             }
           },
           {
@@ -493,7 +493,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 630464200
+              "duration": 603347399
             }
           },
           {
@@ -506,7 +506,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1840361300
+              "duration": 1722255100
             }
           },
           {
@@ -519,7 +519,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2917852400
+              "duration": 2908124699
             }
           },
           {
@@ -532,7 +532,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1913885800
+              "duration": 1912771800
             }
           },
           {
@@ -545,7 +545,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1902012799
+              "duration": 1902928500
             }
           },
           {
@@ -553,7 +553,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 49299
+              "duration": 59700
             }
           }
         ],
@@ -577,7 +577,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 759929099
+              "duration": 679794700
             }
           },
           {
@@ -585,7 +585,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 572804600
+              "duration": 632139600
             }
           },
           {
@@ -598,7 +598,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1973205500
+              "duration": 1796664700
             }
           },
           {
@@ -611,7 +611,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3816873299
+              "duration": 3818799700
             }
           },
           {
@@ -624,7 +624,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3916679099
+              "duration": 3939627200
             }
           },
           {
@@ -637,7 +637,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3885270600
+              "duration": 3883337399
             }
           },
           {
@@ -650,7 +650,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1905165099
+              "duration": 1910125400
             }
           },
           {
@@ -663,7 +663,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1953415699
+              "duration": 1961835100
             }
           },
           {
@@ -676,7 +676,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1910061599
+              "duration": 1911723599
             }
           },
           {
@@ -684,7 +684,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48599
+              "duration": 69499
             }
           }
         ],
@@ -702,6 +702,248 @@
     "keyword": "Feature",
     "name": "Verificar funcionamiento del carrito",
     "tags": [],
-    "uri": "src\\features\\cart\\Cart_Checkout.feature"
+    "uri": "src\\features\\scenarios\\saucedemo\\Cart_Checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sorting-items-on-saucedemo;verify-sorting-by-name",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify Sorting by Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 712069000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 693507599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the SauceDemo website",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3382659000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user logs in with valid credentials user 'standard_user' and 'secret_sauce'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4098997400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user sorts the items by Name 'A' -> 'Z'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2019848100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the items should be sorted by Name (A -> Z)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2006772099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user changes the sorting to Name 'Z' -> 'A'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2006754500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the items should be sorted by Name (Z -> A)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2011000400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 73899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@orde-list",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sorting-items-on-saucedemo;verify-sorting-by-price",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify Sorting by Price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 680125600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 660885599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the SauceDemo website",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 510687900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user logs in with valid credentials user 'standard_user' and 'secret_sauce'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4097158100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user changes the sorting to price 'low' -> 'high'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2020300599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the order should be sorted by price (low -> high)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2003283199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user changes the items to price 'high' -> 'low'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2019273200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the order items be sorted by price (high -> low)",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2010037600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sorting-items-on-saucedemo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sorting Items on SauceDemo",
+    "tags": [],
+    "uri": "src\\features\\scenarios\\saucedemo\\UI_test_task.feature"
   }
 ]
