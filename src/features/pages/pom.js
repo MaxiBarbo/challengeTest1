@@ -147,7 +147,7 @@ class Elements {
     expect(parseFloat(totalAmount[0])).to.equal(parseFloat(taxValue[0]) + parseFloat(total))
 
     // console.log(preciosEnCarrito)
-    console.log(`Total en carrito: sub total: ${total} + tax: ${taxValue[0]} = Total: ${totalAmount[0]}`);
+    console.log(`Total en carrito: sub-total: $${total} + tax: $${taxValue[0]} = Total: $${totalAmount[0]}`);
     }
 }
 module.exports = Elements;
