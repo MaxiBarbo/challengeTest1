@@ -45,14 +45,11 @@ Then('el item se agrega al carrito', async () => {
 
 When('que he agregado todos los productos de la lista al carrito', async () => {
     await page.waitForTimeout(segundos)
-    // expect(process.env.URL).to.include('inventory.html')
-    await page.waitForTimeout(segundos)
     POM.addMultipleItemsOnCart()
-    
+    await page.waitForTimeout(segundos)
 });
 
 When('ingreso al carrito de compras', async () => {
-    // expect(process.env.URL).to.include('cart.html')
     await page.waitForTimeout(segundos)
     await page.locator('#shopping_cart_container a').click();
     await page.locator('[data-test="checkout"]').click();
@@ -69,7 +66,6 @@ When('ingreso datos personales para completar el checkout {string}, {string}, {s
 When('verifico el valor total del saldo en el carrito', async () => {
     await page.waitForTimeout(segundos)
     POM.verifyPriceItemsCart()
-    
 });
 
 Then('confirmo la compra en {string}', async (button) => {
