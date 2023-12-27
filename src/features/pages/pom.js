@@ -107,6 +107,7 @@ class Elements {
     }
 
     async verifyPrice(precio,item){
+        await this.page.waitForSelector(`:text('${precio}')`);
         const selectorPrecio = await this.page.getByText(precio).first().textContent();
         expect(selectorPrecio).contain(precio); 
 
