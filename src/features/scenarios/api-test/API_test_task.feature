@@ -1,6 +1,7 @@
 Feature: Api test task
 
-    Feature Description
+Test task for a Senior Automation QA Engineer role
+
 @api-Request
 Scenario Outline: Request Api
     Given make a get request to the api: 'https://api.publicapis.org/entries'
@@ -10,5 +11,4 @@ Scenario Outline: Request Api
 Examples:
     | Category        | 
     | Auth            |  
-    | Category        |  
-    
+    | Cors            |  

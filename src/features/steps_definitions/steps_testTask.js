@@ -75,7 +75,7 @@ Then('the order items be sorted by price \\(high -> low)', async () => {
 
 Given('make a get request to the api: {string}', async (URL) => {
   API_URL = URL
-  await page.waitForTimeout(segundos);
+  // await page.waitForTimeout(segundos);
 });
 
 
@@ -91,5 +91,5 @@ When('compare, count and verify the number of object where the property Authenti
 
 Then('print found object to control', async () => {
   let dataApi = await functions.apiDataAuth(API_URL,propCategory)
-  await page.waitForTimeout(4000);
+  await page.waitForTimeout(3000);
 });

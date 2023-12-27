@@ -1,99 +1,7 @@
 [
   {
-    "description": "    Feature Description",
+    "description": "Test task for a Senior Automation QA Engineer role",
     "elements": [
-      {
-        "description": "",
-        "id": "api-test-task;request-api",
-        "keyword": "Scenario Outline",
-        "line": 12,
-        "name": "Request Api",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 505688599
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 561543499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "make a get request to the api: 'https://api.publicapis.org/entries'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:76"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2022138299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "read the response and find all objects with property 'Auth'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2013810400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "compare, count and verify the number of object where the property Authentication & Authorization",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:87"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3316503700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "print found object to control",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4859353600
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 133299
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api-Request",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
       {
         "description": "",
         "id": "api-test-task;request-api",
@@ -106,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401440899
+              "duration": 405338799
             }
           },
           {
@@ -114,59 +22,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 441083999
+              "duration": 384638900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 7,
             "name": "make a get request to the api: 'https://api.publicapis.org/entries'",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_testTask.js:76"
             },
             "result": {
               "status": "passed",
-              "duration": 2004372500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "read the response and find all objects with property 'Category'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2009063099
+              "duration": 13670099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
+            "name": "read the response and find all objects with property 'Auth'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2020215399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
             "name": "compare, count and verify the number of object where the property Authentication & Authorization",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_testTask.js:87"
             },
             "result": {
               "status": "passed",
-              "duration": 3232207300
+              "duration": 3672809199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 10,
             "name": "print found object to control",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_testTask.js:92"
             },
             "result": {
               "status": "passed",
-              "duration": 4889852399
+              "duration": 4028318899
             }
           },
           {
@@ -174,14 +82,106 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 898799
+              "duration": 156900
             }
           }
         ],
         "tags": [
           {
             "name": "@api-Request",
-            "line": 4
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-test-task;request-api",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Request Api",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 398526400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 402093299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "make a get request to the api: 'https://api.publicapis.org/entries'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 503899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "read the response and find all objects with property 'Cors'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2006267699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "compare, count and verify the number of object where the property Authentication & Authorization",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3669536899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "print found object to control",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4069425500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 247099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api-Request",
+            "line": 5
           }
         ],
         "type": "scenario"
@@ -193,608 +193,6 @@
     "name": "Api test task",
     "tags": [],
     "uri": "src\\features\\scenarios\\api-test\\API_test_task.feature"
-  },
-  {
-    "description": "    Como usuario de la tienda\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tiena",
-    "elements": [
-      {
-        "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
-        "keyword": "Scenario Outline",
-        "line": 17,
-        "name": "Agregar un articulo al carrito y verificar su precio",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 642784399
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 654325599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3776132699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "agrego el siguiente item 'backpack' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2917653200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "verifico que el precio '$29.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1903576699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1903055300
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 52899
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@items-price",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
-        "keyword": "Scenario Outline",
-        "line": 18,
-        "name": "Agregar un articulo al carrito y verificar su precio",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 441911499
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 434512300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3584447000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "agrego el siguiente item 'bike-light' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2916696900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "verifico que el precio '$9.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1915248399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1910593199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 62800
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@items-price",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
-        "keyword": "Scenario Outline",
-        "line": 19,
-        "name": "Agregar un articulo al carrito y verificar su precio",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 386004999
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 432589300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3490141300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "agrego el siguiente item 'bolt-t-shirt' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2923035499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "verifico que el precio '$15.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1902290400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1909593600
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 46300
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@items-price",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
-        "keyword": "Scenario Outline",
-        "line": 20,
-        "name": "Agregar un articulo al carrito y verificar su precio",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 440568199
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 458203400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3469127300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "agrego el siguiente item 'fleece-jacket' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2921646499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "verifico que el precio '$49.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1915859200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1916501999
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 40699
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@items-price",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
-        "keyword": "Scenario Outline",
-        "line": 21,
-        "name": "Agregar un articulo al carrito y verificar su precio",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 404470499
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 429746200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3449897799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "agrego el siguiente item 'onesie' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2917037500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "verifico que el precio '$7.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1914444300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1909305299
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 42099
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@items-price",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-varios-articulos-al-carrito-y-proceder-al-pago",
-        "keyword": "Scenario Outline",
-        "line": 33,
-        "name": "Agregar varios articulos al carrito y proceder al pago",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 422020900
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 424932600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "que estoy en la pagina de inicio de sesion de la tienda online",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3464225800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "que he agregado todos los productos de la lista al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3826342499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "ingreso al carrito de compras",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3898564900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 27,
-            "name": "ingreso datos personales para completar el checkout 'lilia', 'Marin', '2002'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:60"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3853652099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "verifico el valor total del saldo en el carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1905808200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "confirmo la compra en 'finish'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:72"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1952459300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "recibo la confirmacion exitosa 'Thank you for your order!'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:77"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1905718000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 89300
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cart-checkout",
-            "line": 23
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "verificar-funcionamiento-del-carrito",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Verificar funcionamiento del carrito",
-    "tags": [],
-    "uri": "src\\features\\scenarios\\saucedemo\\Cart_Checkout.feature"
   },
   {
     "description": "",
@@ -811,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 421769600
+              "duration": 405933799
             }
           },
           {
@@ -819,7 +217,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 435219300
+              "duration": 388654299
             }
           },
           {
@@ -832,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 623786399
+              "duration": 821771299
             }
           },
           {
@@ -845,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4106422700
+              "duration": 4112879899
             }
           },
           {
@@ -858,7 +256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2020307500
+              "duration": 2017297700
             }
           },
           {
@@ -871,7 +269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2008146600
+              "duration": 2012065000
             }
           },
           {
@@ -884,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2018913699
+              "duration": 2013551800
             }
           },
           {
@@ -897,7 +295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2010089500
+              "duration": 2006376799
             }
           },
           {
@@ -905,7 +303,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 133399
+              "duration": 78499
             }
           }
         ],
@@ -929,7 +327,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 609734899
+              "duration": 446305600
             }
           },
           {
@@ -937,7 +335,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 659536000
+              "duration": 398017599
             }
           },
           {
@@ -950,7 +348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 639127500
+              "duration": 910649399
             }
           },
           {
@@ -963,7 +361,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4098535000
+              "duration": 4090925199
             }
           },
           {
@@ -976,7 +374,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2018149699
+              "duration": 2015050600
             }
           },
           {
@@ -989,7 +387,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2011701900
+              "duration": 2018207199
             }
           },
           {
@@ -1002,7 +400,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2011750200
+              "duration": 2017392499
             }
           },
           {
@@ -1015,7 +413,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2009685100
+              "duration": 2010994599
             }
           },
           {
@@ -1023,7 +421,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 52500
+              "duration": 66600
             }
           }
         ],
