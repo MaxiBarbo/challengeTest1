@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 433639000
+              "duration": 458721899
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 372321900
+              "duration": 393417299
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2020651900
+              "duration": 2012010200
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2014587299
+              "duration": 2011143700
             }
           },
           {
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3327072800
+              "duration": 3250397499
             }
           },
           {
@@ -74,7 +74,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4708277900
+              "duration": 4843126399
             }
           }
         ],
@@ -109,7 +109,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 400543799
+              "duration": 405433099
             }
           },
           {
@@ -117,7 +117,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 387981800
+              "duration": 394445700
             }
           },
           {
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1674976499
+              "duration": 1729530100
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1861724599
+              "duration": 2922048699
             }
           },
           {
@@ -152,11 +152,11 @@
             "line": 13,
             "name": "verifico que el precio '$29.99' sea el indicado por la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:33"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1857228200
+              "duration": 1905242799
             }
           },
           {
@@ -165,11 +165,11 @@
             "line": 14,
             "name": "el item se agrega al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:38"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1853797100
+              "duration": 1914186200
             }
           }
         ],
@@ -193,7 +193,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 407092800
+              "duration": 406492000
             }
           },
           {
@@ -201,7 +201,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 395210500
+              "duration": 398523100
             }
           },
           {
@@ -214,7 +214,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1631373800
+              "duration": 1649937999
             }
           },
           {
@@ -227,7 +227,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1865610499
+              "duration": 2926170400
             }
           },
           {
@@ -236,11 +236,11 @@
             "line": 13,
             "name": "verifico que el precio '$9.99' sea el indicado por la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:33"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1860168699
+              "duration": 1905300899
             }
           },
           {
@@ -249,11 +249,11 @@
             "line": 14,
             "name": "el item se agrega al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:38"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1851625599
+              "duration": 1915895900
             }
           }
         ],
@@ -277,7 +277,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 399518900
+              "duration": 431359400
             }
           },
           {
@@ -285,7 +285,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 395704100
+              "duration": 449749000
             }
           },
           {
@@ -298,7 +298,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1540310600
+              "duration": 1684697599
             }
           },
           {
@@ -311,7 +311,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1857886099
+              "duration": 2911465199
             }
           },
           {
@@ -320,11 +320,11 @@
             "line": 13,
             "name": "verifico que el precio '$15.99' sea el indicado por la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:33"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1853442600
+              "duration": 1905843600
             }
           },
           {
@@ -333,11 +333,11 @@
             "line": 14,
             "name": "el item se agrega al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:38"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1854436299
+              "duration": 1915764500
             }
           }
         ],
@@ -361,7 +361,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 406063400
+              "duration": 403202600
             }
           },
           {
@@ -369,7 +369,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 395547399
+              "duration": 429663100
             }
           },
           {
@@ -382,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1533553799
+              "duration": 1556439299
             }
           },
           {
@@ -395,7 +395,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1856385800
+              "duration": 2909939299
             }
           },
           {
@@ -404,11 +404,11 @@
             "line": 13,
             "name": "verifico que el precio '$49.99' sea el indicado por la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:33"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1854191899
+              "duration": 1916922600
             }
           },
           {
@@ -417,11 +417,11 @@
             "line": 14,
             "name": "el item se agrega al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:38"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1853018100
+              "duration": 1900995299
             }
           }
         ],
@@ -445,7 +445,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401368099
+              "duration": 400168399
             }
           },
           {
@@ -453,7 +453,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 411709600
+              "duration": 408203599
             }
           },
           {
@@ -466,7 +466,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1584073500
+              "duration": 1733068699
             }
           },
           {
@@ -479,7 +479,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1856948899
+              "duration": 2927489699
             }
           },
           {
@@ -488,11 +488,11 @@
             "line": 13,
             "name": "verifico que el precio '$7.99' sea el indicado por la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:33"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1865568899
+              "duration": 1901418899
             }
           },
           {
@@ -501,11 +501,11 @@
             "line": 14,
             "name": "el item se agrega al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:38"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1853948700
+              "duration": 1910634199
             }
           }
         ],
@@ -529,7 +529,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 415974900
+              "duration": 400950999
             }
           },
           {
@@ -537,7 +537,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 407365200
+              "duration": 396273599
             }
           },
           {
@@ -550,7 +550,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1566082000
+              "duration": 1665316799
             }
           },
           {
@@ -559,11 +559,11 @@
             "line": 25,
             "name": "que he agregado todos los productos de la lista al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:45"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:46"
             },
             "result": {
               "status": "passed",
-              "duration": 3727204400
+              "duration": 3825079800
             }
           },
           {
@@ -572,11 +572,11 @@
             "line": 26,
             "name": "ingreso al carrito de compras",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:51"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 3803250099
+              "duration": 3899680600
             }
           },
           {
@@ -585,11 +585,11 @@
             "line": 27,
             "name": "ingreso datos personales para completar el checkout 'Lali', 'Marin', '1986'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:58"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 3763916899
+              "duration": 3869721799
             }
           },
           {
@@ -598,11 +598,11 @@
             "line": 28,
             "name": "verifico el valor total del saldo en el carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:65"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:66"
             },
             "result": {
               "status": "passed",
-              "duration": 1867244300
+              "duration": 1907460299
             }
           },
           {
@@ -611,11 +611,11 @@
             "line": 29,
             "name": "confirmo la compra en 'finish'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:70"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 1912177900
+              "duration": 1949221599
             }
           },
           {
@@ -624,11 +624,11 @@
             "line": 30,
             "name": "recibo la confirmacion exitosa 'Thank you for your order!'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_itemCart.js:75"
+              "location": "src\\features\\steps_definitions\\steps_itemCart.js:76"
             },
             "result": {
               "status": "passed",
-              "duration": 1855016799
+              "duration": 1908241600
             }
           }
         ],
@@ -663,7 +663,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 441190100
+              "duration": 401462199
             }
           },
           {
@@ -671,7 +671,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 451869300
+              "duration": 429266099
             }
           },
           {
@@ -684,7 +684,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 462441900
+              "duration": 754646800
             }
           },
           {
@@ -697,7 +697,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4112126599
+              "duration": 4116580300
             }
           },
           {
@@ -710,7 +710,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2004743800
+              "duration": 2013092599
             }
           },
           {
@@ -723,7 +723,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2013993800
+              "duration": 2012921499
             }
           },
           {
@@ -736,7 +736,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2016969699
+              "duration": 2011812900
             }
           },
           {
@@ -749,7 +749,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2013761000
+              "duration": 2011612699
             }
           }
         ],
@@ -773,7 +773,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 432077300
+              "duration": 482894800
             }
           },
           {
@@ -781,7 +781,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 435329800
+              "duration": 434190299
             }
           },
           {
@@ -794,7 +794,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 446821099
+              "duration": 438812999
             }
           },
           {
@@ -807,7 +807,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4100946900
+              "duration": 4091647300
             }
           },
           {
@@ -820,7 +820,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2015419499
+              "duration": 2005497399
             }
           },
           {
@@ -833,7 +833,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2014609500
+              "duration": 2010352600
             }
           },
           {
@@ -846,7 +846,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2004978700
+              "duration": 2010903599
             }
           },
           {
@@ -859,7 +859,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2003851600
+              "duration": 2008912400
             }
           }
         ],

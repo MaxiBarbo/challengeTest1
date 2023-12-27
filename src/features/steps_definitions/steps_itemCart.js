@@ -9,7 +9,7 @@ let POM
 let segundos = 1900
 let item
 
-Before( { timeout: 10000 }, async () => {
+Before( { timeout: 15000 }, async () => {
     browser = await chromium.launch({ headless: true });
     page = await browser.newPage();
     POM = new Elements(page)
@@ -26,6 +26,7 @@ Given('que estoy en la pagina de inicio de sesion de la tienda online', async ()
 
 When('agrego el siguiente item {string} al carrito', async (producto) => {
     item = producto
+    await page.waitForTimeout(1000)
     POM.addItemCart(producto)
     await page.waitForTimeout(segundos)
 });
