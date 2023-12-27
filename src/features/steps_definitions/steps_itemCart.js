@@ -9,7 +9,7 @@ let POM
 let segundos = 1900
 let item
 
-Before( { timeout: 15000 }, async () => {
+Before( { timeout: 20000 }, async () => {
     browser = await chromium.launch({ headless: true });
     page = await browser.newPage();
     POM = new Elements(page)
