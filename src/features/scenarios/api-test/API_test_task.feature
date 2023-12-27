@@ -8,6 +8,7 @@ Scenario Outline: Request Api
     When compare, count and verify the number of object where the property Authentication & Authorization
     Then print found object to control
 Examples:
-    | Category | 
-    | Auth     |    
+    | Category        | 
+    | Auth            |  
+    | Category        |  
     
