@@ -6,7 +6,7 @@ require('dotenv').config()
 
 let browser, page;
 let POM
-let segundos = 2000
+let segundos = 1850
 let item
 
 Before( { timeout: 10000 }, async () => {
