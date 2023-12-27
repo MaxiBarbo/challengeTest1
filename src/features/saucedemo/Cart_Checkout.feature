@@ -30,4 +30,4 @@ Scenario Outline: Agregar varios articulos al carrito y proceder al pago
     Then recibo la confirmacion exitosa 'Thank you for your order!'
 Examples:
     | firstName | lastName | postalCode |
-    | Lali      | Marin    | 1986       |    
+    | lilia     | Marin    | 2002       |    

@@ -1,5 +1,108 @@
 [
   {
+    "description": "    Feature Description",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-test-task;request-api",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Request Api",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 759652600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 580290000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "make a get request to the api: 'https://api.publicapis.org/entries'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2023967000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "read the response and find all objects with property 'Auth'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2007942999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "compare, count and verify the number of object where the property Authentication & Authorization",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3485400999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "print found object to control",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_testTask.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4902948899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 137300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api-Request",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-test-task",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Api test task",
+    "tags": [],
+    "uri": "src\\features\\api\\API_test_task.feature"
+  },
+  {
     "description": "    Como usuario de la tienda\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tiena",
     "elements": [
       {
@@ -14,7 +117,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 454059399
+              "duration": 676114199
             }
           },
           {
@@ -22,7 +125,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 372194500
+              "duration": 785730399
             }
           },
           {
@@ -35,7 +138,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2691148300
+              "duration": 1863812199
             }
           },
           {
@@ -48,7 +151,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2922666000
+              "duration": 2925088299
             }
           },
           {
@@ -61,7 +164,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1915864300
+              "duration": 1913550400
             }
           },
           {
@@ -74,7 +177,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1912431499
+              "duration": 1908108399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121199
             }
           }
         ],
@@ -98,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 410075000
+              "duration": 728819099
             }
           },
           {
@@ -106,7 +217,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 405671000
+              "duration": 559180999
             }
           },
           {
@@ -119,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1572861099
+              "duration": 1793681300
             }
           },
           {
@@ -132,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2921449900
+              "duration": 2915955600
             }
           },
           {
@@ -145,7 +256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1916441200
+              "duration": 1915584900
             }
           },
           {
@@ -158,7 +269,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1902321200
+              "duration": 1913756800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 75900
             }
           }
         ],
@@ -182,7 +301,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 432719600
+              "duration": 719216699
             }
           },
           {
@@ -190,7 +309,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 432989600
+              "duration": 581503600
             }
           },
           {
@@ -203,7 +322,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1573666000
+              "duration": 1921122999
             }
           },
           {
@@ -216,7 +335,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2918625200
+              "duration": 2920469699
             }
           },
           {
@@ -229,7 +348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1914916200
+              "duration": 1917275600
             }
           },
           {
@@ -242,7 +361,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1915763099
+              "duration": 1910120200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65099
             }
           }
         ],
@@ -266,7 +393,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 399047000
+              "duration": 854394500
             }
           },
           {
@@ -274,7 +401,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 403344900
+              "duration": 587425400
             }
           },
           {
@@ -287,7 +414,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1578941799
+              "duration": 1970241400
             }
           },
           {
@@ -300,7 +427,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2905417000
+              "duration": 2928533199
             }
           },
           {
@@ -313,7 +440,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1916320399
+              "duration": 1914414599
             }
           },
           {
@@ -326,7 +453,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1915286399
+              "duration": 1914649700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51200
             }
           }
         ],
@@ -350,7 +485,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 397175999
+              "duration": 703295700
             }
           },
           {
@@ -358,7 +493,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 415583400
+              "duration": 630464200
             }
           },
           {
@@ -371,7 +506,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1564606000
+              "duration": 1840361300
             }
           },
           {
@@ -384,7 +519,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2922669900
+              "duration": 2917852400
             }
           },
           {
@@ -397,7 +532,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1911230900
+              "duration": 1913885800
             }
           },
           {
@@ -410,7 +545,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1915388200
+              "duration": 1902012799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49299
             }
           }
         ],
@@ -434,7 +577,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 399309300
+              "duration": 759929099
             }
           },
           {
@@ -442,7 +585,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 413865900
+              "duration": 572804600
             }
           },
           {
@@ -455,7 +598,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1701419800
+              "duration": 1973205500
             }
           },
           {
@@ -468,7 +611,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3818092200
+              "duration": 3816873299
             }
           },
           {
@@ -481,20 +624,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3909697300
+              "duration": 3916679099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 27,
-            "name": "ingreso datos personales para completar el checkout 'Lali', 'Marin', '1986'",
+            "name": "ingreso datos personales para completar el checkout 'lilia', 'Marin', '2002'",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_itemCart.js:60"
             },
             "result": {
               "status": "passed",
-              "duration": 3865817299
+              "duration": 3885270600
             }
           },
           {
@@ -507,7 +650,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1915067200
+              "duration": 1905165099
             }
           },
           {
@@ -520,7 +663,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1945527999
+              "duration": 1953415699
             }
           },
           {
@@ -533,7 +676,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1912564599
+              "duration": 1910061599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48599
             }
           }
         ],
@@ -551,6 +702,6 @@
     "keyword": "Feature",
     "name": "Verificar funcionamiento del carrito",
     "tags": [],
-    "uri": "src\\features\\Cart_Checkout.feature"
+    "uri": "src\\features\\cart\\Cart_Checkout.feature"
   }
 ]

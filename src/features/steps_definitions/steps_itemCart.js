@@ -1,4 +1,4 @@
-const { Given, When, Then, Before } = require('@cucumber/cucumber');
+const { Given, When, Then, Before, After } = require('@cucumber/cucumber');
 const { expect, assert } = require('chai');
 const { chromium } = require('playwright');
 const Elements = require('../pages/pom')
@@ -10,7 +10,7 @@ let segundos = 1900
 let item
 
 Before( { timeout: 10000 }, async () => {
-    browser = await chromium.launch({ headless: true });
+    browser = await chromium.launch({ headless: false });
     page = await browser.newPage();
     POM = new Elements(page)
 });
@@ -77,4 +77,11 @@ Then('confirmo la compra en {string}', async (button) => {
 Then('recibo la confirmacion exitosa {string}', async (mensaje) => {
     await page.waitForTimeout(segundos)
     await page.getByRole('heading', { name: mensaje })
+});
+
+After( async () => {
+// Cerrar el navegador después de cada escenario
+    if (this.browser) {
+    await this.browser.close();
+}
 });
