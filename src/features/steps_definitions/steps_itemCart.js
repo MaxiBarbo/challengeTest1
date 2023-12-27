@@ -26,9 +26,8 @@ Given('que estoy en la pagina de inicio de sesion de la tienda online', async ()
 
 When('agrego el siguiente item {string} al carrito', async (producto) => {
     item = producto
-    await page.waitForTimeout(segundos)
     POM.addItemCart(producto)
-
+    await page.waitForTimeout(segundos)
 });
 
 When('verifico que el precio {string} sea el indicado por la tienda', async (precio) => {
