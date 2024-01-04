@@ -3,7 +3,6 @@ const { expect, assert } = require('chai');
 const { chromium, firefox, webkit } = require('playwright');
 const Elements = require('../pages/pom')
 const BASE_URL = require('../../utils/url-verify')
-require('dotenv').config()
 
 let browser, page;
 let POM
@@ -21,14 +20,16 @@ Before( { timeout: 10000 }, async () => {
     // base_url.screenMobileSizeIphone12(390,844)
     base_url.screenDesktopSize(1900,1000)
 
-    console.log(`Usando el navegador: ${browserName}`)
+    console.log(`Tipo de navegador: ${browserName}`)
 });
 
-Given('que he ingresado con mi usuario y contraseña a la tienda', async () => {
-    
+Given('que he ingresado en {string}', async (URL) => {
+    await page.goto(URL)
+    console.log(`URL Web: ${URL}`)
+});
 
-    await page.goto(process.env.BASE_URL)
-    POM.loginUser(process.env.USER,process.env.PASS)
+When('inicio sesion usuario {string} y contraseña {string} a la tienda', async (user,password) => {
+    POM.loginUser(user,password)
     await page.waitForTimeout(1000)
     await page.locator('[data-test="login-button"]').click();
     await page.waitForTimeout(segundos)
