@@ -31,7 +31,6 @@ class Functions {
                 return entries.map(e => e[prop])
             }
             const categoryProp = mapProp(entries, category)
-            // const Auth = entries.map(e => e.Auth)
             // Contamos canitdad de valores unicos en la categoria 'Auth'
             const countTypesAuth = [...new Set(categoryProp)]
             // Contamos cantidad de cada valor encontrado en la categoria 'Auth'

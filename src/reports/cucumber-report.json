@@ -1,301 +1,85 @@
 [
   {
-    "description": "Test task for a Senior Automation QA Engineer role",
+    "description": "    Como usuario de la tienda\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tiena",
     "elements": [
       {
         "description": "",
-        "id": "api-test-task;request-api",
-        "keyword": "Scenario Outline",
-        "line": 13,
-        "name": "Request Api",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 405338799
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 384638900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "make a get request to the api: 'https://api.publicapis.org/entries'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:76"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13670099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "read the response and find all objects with property 'Auth'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2020215399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "compare, count and verify the number of object where the property Authentication & Authorization",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:87"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3672809199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "print found object to control",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4028318899
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 156900
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api-Request",
-            "line": 5
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "api-test-task;request-api",
-        "keyword": "Scenario Outline",
-        "line": 14,
-        "name": "Request Api",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 398526400
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 402093299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "make a get request to the api: 'https://api.publicapis.org/entries'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:76"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 503899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "read the response and find all objects with property 'Cors'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:82"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2006267699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "compare, count and verify the number of object where the property Authentication & Authorization",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:87"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3669536899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "print found object to control",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4069425500
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 247099
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api-Request",
-            "line": 5
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "api-test-task",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Api test task",
-    "tags": [],
-    "uri": "src\\features\\scenarios\\api-test\\API_test_task.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "sorting-items-on-saucedemo;verify-sorting-by-name",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
         "keyword": "Scenario",
-        "line": 8,
-        "name": "Verify Sorting by Name",
+        "line": 16,
+        "name": "Agregar un articulo al carrito y verificar su precio",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 405933799
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 388654299
+              "duration": 3269714400
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "the user is on the SauceDemo website",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 821771299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "the user logs in with valid credentials user 'standard_user' and 'secret_sauce'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4112879899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 9,
-            "name": "the user sorts the items by Name 'A' -> 'Z'",
+            "name": "que he ingresado con mi usuario y contraseña a la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:34"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2017297700
+              "duration": 4991208400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "agrego el siguiente item 'backpack' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3942635600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "verifico que el precio '$29.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1917080700
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "the items should be sorted by Name (A -> Z)",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2012065000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 12,
-            "name": "the user changes the sorting to Name 'Z' -> 'A'",
+            "name": "el item se agrega al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:44"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 2013551800
+              "duration": 1928189200
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "the items should be sorted by Name (Z -> A)",
+            "name": "y se verifica con exito su nombre pruducto y precio en $",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:49"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 2006376799
+              "duration": 2163399
             }
           },
           {
@@ -303,13 +87,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 78499
+              "duration": 341999
             }
           }
         ],
         "tags": [
           {
-            "name": "@orde-list",
+            "name": "@items-price",
             "line": 7
           }
         ],
@@ -317,103 +101,82 @@
       },
       {
         "description": "",
-        "id": "sorting-items-on-saucedemo;verify-sorting-by-price",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Verify Sorting by Price",
+        "line": 17,
+        "name": "Agregar un articulo al carrito y verificar su precio",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 446305600
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 398017599
+              "duration": 2756092599
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "the user is on the SauceDemo website",
+            "line": 9,
+            "name": "que he ingresado con mi usuario y contraseña a la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:23"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 910649399
+              "duration": 4412855400
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "the user logs in with valid credentials user 'standard_user' and 'secret_sauce'",
+            "line": 10,
+            "name": "agrego el siguiente item 'bike-light' al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:27"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 4090925199
+              "duration": 3893751499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 16,
-            "name": "the user changes the sorting to price 'low' -> 'high'",
+            "line": 11,
+            "name": "verifico que el precio '$9.99' sea el indicado por la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:54"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 2015050600
+              "duration": 1918618099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
-            "name": "the order should be sorted by price (low -> high)",
+            "line": 12,
+            "name": "el item se agrega al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:59"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 2018207199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "the user changes the items to price 'high' -> 'low'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:64"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2017392499
+              "duration": 1908168399
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
-            "name": "the order items be sorted by price (high -> low)",
+            "line": 13,
+            "name": "y se verifica con exito su nombre pruducto y precio en $",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_testTask.js:69"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 2010994599
+              "duration": 503999
             }
           },
           {
@@ -421,19 +184,218 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 66600
+              "duration": 232899
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Agregar un articulo al carrito y verificar su precio",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2824938800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "que he ingresado con mi usuario y contraseña a la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4311116600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "agrego el siguiente item 'bolt-t-shirt' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3879137400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "verifico que el precio '$15.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1915357699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "el item se agrega al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1909244300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "y se verifica con exito su nombre pruducto y precio en $",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 248400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 140899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Agregar un articulo al carrito y verificar su precio",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2694519699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "que he ingresado con mi usuario y contraseña a la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4243497299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "agrego el siguiente item 'fleece-jacket' al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3887627900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "verifico que el precio '$49.99' sea el indicado por la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1909951099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "el item se agrega al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1913048599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "y se verifica con exito su nombre pruducto y precio en $",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 294600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 163799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@items-price",
+            "line": 7
+          }
+        ],
         "type": "scenario"
       }
     ],
-    "id": "sorting-items-on-saucedemo",
+    "id": "verificar-funcionamiento-del-carrito",
     "line": 1,
     "keyword": "Feature",
-    "name": "Sorting Items on SauceDemo",
+    "name": "Verificar funcionamiento del carrito",
     "tags": [],
-    "uri": "src\\features\\scenarios\\saucedemo\\UI_test_task.feature"
+    "uri": "src\\features\\scenarios\\saucedemo\\items_verify_data.feature"
   }
 ]

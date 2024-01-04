@@ -84,7 +84,7 @@ class Elements {
         const sortedItems = [...items].sort((a, b) => a.price - b.price);
         expect(JSON.stringify(items)).to.equal(JSON.stringify(sortedItems));
 
-        console.log('Original order Items:', items);
+        // console.log('Original order Items:', items);
         console.log('Sorted Items by price Low => High:', sortedItems);
     }
 
@@ -98,7 +98,7 @@ class Elements {
         const sortedItems = [...items].sort((a, b) => b.price - a.price);
         expect(JSON.stringify(items)).to.equal(JSON.stringify(sortedItems));
         
-        console.log('Original order Items:', items);
+        // console.log('Original order Items:', items);
         console.log('Sorted Items by price High = Low:', sortedItems);
     }
 
@@ -106,11 +106,32 @@ class Elements {
         await this.page.locator(`[data-test="add-to-cart-sauce-labs-${producto}"]`).click()
     }
 
-    async verifyPrice(precio,item){
-        const selectorPrecio = await this.page.getByText(precio).first().textContent();
-        expect(selectorPrecio).contain(precio); 
+    async verifyPriceOnCart(item,precio){
+        //Se realizar un map en la clase cart item contenedora del nombre y precio obtenidos del carrito
+        const carritoInfo = await this.page.$$eval('.cart_item', elementosCarrito =>
+        elementosCarrito.map(elemento => {
+            // se buscar
+            const nombre = elemento.querySelector('.inventory_item_name').innerText.trim();
+            const precio = parseFloat(elemento.querySelector('.inventory_item_price').innerText.replace('$', ''));
+            //retornamos nombre y precio en Array a const carrito info
+            return {nombre, precio}; 
+            })
+        ); 
+        // los valores en parametros se pasan a Array
+        const productoBuscado = { nombre: item, precio: precio}
+        let precioConvertido = parseFloat(productoBuscado.precio.replace('$', '')); 
+    
+        const productoBuscadoconvertido = productoBuscado.nombre.toLowerCase()
+        const productoEnCarritoConvertido = carritoInfo[0].nombre.toLowerCase()
 
-        console.log(`Producto: ${item}, Precio: ${selectorPrecio}`)
+        // Verificacion de precio en la feature vs precio obtenido en en app de la tienda
+        expect(carritoInfo[0].precio).to.equal(precioConvertido)
+        // Verificacion de nombre en la feature vs nombre obtenido en en app de la tienda
+        expect(productoEnCarritoConvertido.replace(/[-\s]/g, '')).to.include(productoBuscadoconvertido.replace(/[-\s]/g, ''))
+
+        console.log(`Feature data: Producto: ${productoBuscadoconvertido.replace(/[-\s]/g, '')} y precio: ${precioConvertido}`);
+        console.log(`Carrito data: Producto: ${productoEnCarritoConvertido.replace(/[-\s]/g, '')} y precio: ${carritoInfo[0].precio}`);
+    
     }
 
     async addMultipleItemsOnCart(){
@@ -126,6 +147,7 @@ class Elements {
             const selector = `[data-test="${producto}"]`;
             await this.page.locator(selector).click();
         }
+        return productos
     }
 
     async verifyPriceItemsCart(){
@@ -145,9 +167,13 @@ class Elements {
     const taxValue = tax.match(/\d+\.\d+/)    
 
     expect(parseFloat(totalAmount[0])).to.equal(parseFloat(taxValue[0]) + parseFloat(total))
+    await this.addMultipleItemsOnCart()    
 
-    // console.log(preciosEnCarrito)
+
+    console.log('Precios x items en carrito')
+    console.log(preciosEnCarrito)
     console.log(`Total en carrito: sub-total: $${total} + tax: $${taxValue[0]} = Total: $${totalAmount[0]}`);
     }
+
 }
 module.exports = Elements;
