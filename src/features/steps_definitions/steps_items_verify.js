@@ -26,6 +26,7 @@ Before( { timeout: 10000 }, async () => {
 Given('que he ingresado en {string}', async (URL) => {
     await page.goto(URL)
     console.log(`URL Web: ${URL}`)
+    console.log(`Test para verificar nombre y precio del producto ${item}`)
 });
 
 When('inicio sesion usuario {string} y contraseña {string} a la tienda', async (user,password) => {

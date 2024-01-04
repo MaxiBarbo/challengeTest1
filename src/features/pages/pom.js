@@ -129,8 +129,8 @@ class Elements {
         // Verificacion de nombre en la feature vs nombre obtenido en en app de la tienda
         expect(productoEnCarritoConvertido.replace(/[-\s]/g, '')).to.include(productoBuscadoconvertido.replace(/[-\s]/g, ''))
 
-        console.log(`Feature data: Producto: ${productoBuscadoconvertido.replace(/[-\s]/g, '')} y precio: ${precioConvertido}`);
-        console.log(`Carrito data: Producto: ${productoEnCarritoConvertido.replace(/[-\s]/g, '')} y precio: ${carritoInfo[0].precio}`);
+        console.log(`data obtenida de la feature: Producto: ${productoBuscadoconvertido.replace(/[-\s]/g, '')} y precio: $${precioConvertido}`);
+        console.log(`data obtenida del carrito: Producto: ${productoEnCarritoConvertido.replace(/[-\s]/g, '')} y precio: $${carritoInfo[0].precio}`);
     
     }
 
