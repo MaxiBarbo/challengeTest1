@@ -12,7 +12,7 @@ let segundos = 1900
 let item
 
 Before( { timeout: 10000 }, async () => {
-    browser = await firefox.launch({ headless: false });
+    browser = await firefox.launch({ headless: true });
     page = await browser.newPage();
     POM = new Elements(page)
     base_url = new BASE_URL(page) 
