@@ -9,6 +9,7 @@ let POM
 let base_url
 let segundos = 1900
 let item
+let productList
 
 Before( { timeout: 10000 }, async () => {
     browser = await firefox.launch({ headless: true });
@@ -17,16 +18,13 @@ Before( { timeout: 10000 }, async () => {
     base_url = new BASE_URL(page) 
     const browserName = 'fIrefox'
     // indicamos y verificamos que el tamño de pantalla sea eleligo (width/height)
-    // base_url.screenMobileSizeIphone12(390,844)
-    base_url.screenDesktopSize(1900,1000)
-
     console.log(`Tipo de navegador: ${browserName}`)
 });
 
 Given('que he ingresado en {string}', async (URL) => {
     await page.goto(URL)
+    base_url.screenDesktopSize(1920,1000)
     console.log(`URL Web: ${URL}`)
-    console.log(`Test para verificar nombre y precio del producto ${item}`)
 });
 
 When('inicio sesion usuario {string} y contraseña {string} a la tienda', async (user,password) => {
@@ -38,6 +36,8 @@ When('inicio sesion usuario {string} y contraseña {string} a la tienda', async 
 
 When('agrego el siguiente item {string} al carrito', async (producto) => {
     item = producto
+    // console.log(`Test para verificar nombre y precio del producto ${item}`)
+    productList = POM.nameListProducts()
     await page.waitForTimeout(segundos)
     POM.addItemCart(item)
     await page.waitForTimeout(segundos)
@@ -46,17 +46,32 @@ When('agrego el siguiente item {string} al carrito', async (producto) => {
 
 When('verifico que el precio {string} sea el indicado por la tienda', async (precio) => {
     await page.waitForTimeout(segundos)
-    POM.verifyPriceOnCart(item,precio)
+    POM.verifyPriceOnCart(item,precio,productList)
     
 });
 
 Then('el item se agrega al carrito', async () => {
     await page.waitForTimeout(segundos)
-
+    POM.verifyProduct(item)
+    await page.waitForTimeout(segundos)
 });
 
-Then('y se verifica con exito su nombre pruducto y precio en $', async () => {
-    
+When('ingreso al {string} los datos firstName {string}, lastName {string}, postalCode {string}', async (checkout,firstName,lastName,postalCode) => {
+    await page.locator(`[data-test=${checkout}]`).click();
+    POM.checkoutData(firstName, lastName, postalCode)
+    await page.waitForTimeout(segundos)
+});
+
+When('completo la compra {string}', async (finish) => {
+    await page.locator('[data-test="continue"]').click(); 
+    POM.verifyPriceItemsCart()
+    await page.waitForTimeout(segundos)
+    await page.locator(`[data-test=${finish}]`).click();
+});
+
+When('recibo mensaje {string}', async (message) => {
+    POM.verifyOrderMessage(message)
+    await page.waitForTimeout(segundos)
 });
 
 After( async () => {
@@ -64,4 +79,4 @@ After( async () => {
         if (this.browser) {
         await this.browser.close();
     }
-    });
+});

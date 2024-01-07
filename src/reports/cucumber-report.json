@@ -1,20 +1,232 @@
 [
   {
-    "description": "    Como usuario de la tienda SauceDemo\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tienda",
+    "description": "    Como usuario de la tienda\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tiena",
     "elements": [
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Agregar un articulo al carrito y verificar su precio",
+        "id": "verificar-funcionamiento-del-carrito;agregar-todos-articulos-al-carrito-y-proceder-al-pago",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Agregar todos articulos al carrito y proceder al pago",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1244883899
+              "duration": 1277785700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1447573300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "que he ingresado en la web: 'https://www.saucedemo.com/'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2028502400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "ingreso usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3029284500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Nombre",
+                      "Precio esperado"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Backpack",
+                      "29.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bike Light",
+                      "9.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bolt T-Shirt",
+                      "15.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Fleece Jacket",
+                      "49.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Onesie",
+                      "7.99"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "que he agregado todos los productos de la lista al carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3819201900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "ingreso al carrito de compras",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3932934399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "ingreso datos personales para completar el checkout 'lilia', 'Marin', '2002'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3882125600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "verifico los productos y el valor total del saldo acumulado en el carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1908904100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "confirmo la compra en 'finish'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1963503899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "recibo la confirmacion exitosa 'Thank you for your order!'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3817677400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 272100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart-checkout",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verificar-funcionamiento-del-carrito",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Verificar funcionamiento del carrito",
+    "tags": [],
+    "uri": "src\\features\\Cart_Checkout.feature"
+  },
+  {
+    "description": "    Como usuario de la tienda SauceDemo\n    Quiero comprar 1 producto exitosamente\n    Para verificar el correcto checkout de la tienda",
+    "elements": [
+      {
+        "description": "",
+        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Compra de 1 producto en la tienda",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1218729000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1449046400
             }
           },
           {
@@ -23,11 +235,11 @@
             "line": 9,
             "name": "que he ingresado en 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:26"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 1264167000
+              "duration": 1302689800
             }
           },
           {
@@ -36,11 +248,11 @@
             "line": 10,
             "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 3041689699
+              "duration": 3006520099
             }
           },
           {
@@ -49,11 +261,11 @@
             "line": 11,
             "name": "agrego el siguiente item 'backpack' al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 3882859500
+              "duration": 3873577300
             }
           },
           {
@@ -66,7 +278,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1922286900
+              "duration": 1910724300
             }
           },
           {
@@ -79,20 +291,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1918829299
+              "duration": 3818294900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "y se verifica con exito su nombre pruducto y precio en $",
+            "name": "ingreso al 'checkout' los datos firstName 'max', lastName 'power', postalCode '1986'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:58"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 2446699
+              "duration": 1970844699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "completo la compra 'finish'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2008028200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "recibo mensaje 'Thank you for your order!'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1908297099
             }
           },
           {
@@ -100,7 +338,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 120000
+              "duration": 223999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 158600
             }
           }
         ],
@@ -114,17 +360,25 @@
       },
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
         "keyword": "Scenario",
-        "line": 18,
-        "name": "Agregar un articulo al carrito y verificar su precio",
+        "line": 20,
+        "name": "Compra de 1 producto en la tienda",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1129082600
+              "duration": 1247515799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1438589200
             }
           },
           {
@@ -133,11 +387,11 @@
             "line": 9,
             "name": "que he ingresado en 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:26"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 1212988400
+              "duration": 1400680400
             }
           },
           {
@@ -146,11 +400,11 @@
             "line": 10,
             "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 3052319400
+              "duration": 3045978200
             }
           },
           {
@@ -159,11 +413,11 @@
             "line": 11,
             "name": "agrego el siguiente item 'bike-light' al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 3903663900
+              "duration": 3875535699
             }
           },
           {
@@ -176,7 +430,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1917610199
+              "duration": 1916114399
             }
           },
           {
@@ -189,20 +443,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1918589599
+              "duration": 3816602400
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "y se verifica con exito su nombre pruducto y precio en $",
+            "name": "ingreso al 'checkout' los datos firstName 'clari', lastName 'sun', postalCode '0001'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:58"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 410000
+              "duration": 1957842299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "completo la compra 'finish'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2022659599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "recibo mensaje 'Thank you for your order!'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1904043699
             }
           },
           {
@@ -210,7 +490,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 141499
+              "duration": 71999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 44900
             }
           }
         ],
@@ -224,17 +512,25 @@
       },
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
         "keyword": "Scenario",
-        "line": 19,
-        "name": "Agregar un articulo al carrito y verificar su precio",
+        "line": 21,
+        "name": "Compra de 1 producto en la tienda",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1259336800
+              "duration": 1492606299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1736359999
             }
           },
           {
@@ -243,11 +539,11 @@
             "line": 9,
             "name": "que he ingresado en 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:26"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 1268075300
+              "duration": 2104279000
             }
           },
           {
@@ -256,11 +552,11 @@
             "line": 10,
             "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 3047848000
+              "duration": 3001485899
             }
           },
           {
@@ -269,11 +565,11 @@
             "line": 11,
             "name": "agrego el siguiente item 'bolt-t-shirt' al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 3925411900
+              "duration": 3868012599
             }
           },
           {
@@ -286,7 +582,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1914684500
+              "duration": 1909074099
             }
           },
           {
@@ -299,20 +595,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1918038899
+              "duration": 3813747000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "y se verifica con exito su nombre pruducto y precio en $",
+            "name": "ingreso al 'checkout' los datos firstName 'lali', lastName 'sari', postalCode '9999'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:58"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 334099
+              "duration": 1966141000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "completo la compra 'finish'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2033499799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "recibo mensaje 'Thank you for your order!'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1914647700
             }
           },
           {
@@ -320,7 +642,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 182900
+              "duration": 50300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24599
             }
           }
         ],
@@ -334,17 +664,25 @@
       },
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-un-articulo-al-carrito-y-verificar-su-precio",
+        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
         "keyword": "Scenario",
-        "line": 20,
-        "name": "Agregar un articulo al carrito y verificar su precio",
+        "line": 22,
+        "name": "Compra de 1 producto en la tienda",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1150620099
+              "duration": 1227874200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1495621600
             }
           },
           {
@@ -353,11 +691,11 @@
             "line": 9,
             "name": "que he ingresado en 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:26"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 1163660500
+              "duration": 2577492300
             }
           },
           {
@@ -366,11 +704,11 @@
             "line": 10,
             "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 3034088200
+              "duration": 3006484599
             }
           },
           {
@@ -379,11 +717,11 @@
             "line": 11,
             "name": "agrego el siguiente item 'fleece-jacket' al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 3900298099
+              "duration": 3871003600
             }
           },
           {
@@ -396,7 +734,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1916492800
+              "duration": 1907236599
             }
           },
           {
@@ -409,20 +747,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1911691200
+              "duration": 3816240099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "y se verifica con exito su nombre pruducto y precio en $",
+            "name": "ingreso al 'checkout' los datos firstName 'juli', lastName 'love', postalCode '0101'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:58"
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 347500
+              "duration": 1969371199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "completo la compra 'finish'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014453899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "recibo mensaje 'Thank you for your order!'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\steps_items_verify.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1911922699
             }
           },
           {
@@ -430,7 +794,15 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 497600
+              "duration": 48900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21499
             }
           }
         ],
@@ -448,6 +820,6 @@
     "keyword": "Feature",
     "name": "Verificar funcionamiento del carrito",
     "tags": [],
-    "uri": "src\\features\\scenarios\\saucedemo\\items_verify_data.feature"
+    "uri": "src\\features\\items_verify_data.feature"
   }
 ]
