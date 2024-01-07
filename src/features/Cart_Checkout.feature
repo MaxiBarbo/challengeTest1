@@ -1,8 +1,8 @@
 Feature: Verificar checkout con todos los productos de la tienda
 
     Como usuario de la tienda
-    Quiero comprar productos exitosamente
-    Para verificar el correcto checkout de la tiena
+    Quiero comprar todos los productos de la tienda exitosamente
+    Para verificar el correcto checkout de la tienda
 
 @cart-checkout
 Scenario Outline: Agregar todos articulos al carrito y proceder al pago

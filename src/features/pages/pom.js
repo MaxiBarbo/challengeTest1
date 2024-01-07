@@ -249,8 +249,9 @@ class Elements {
     }
 
     async verifyProduct(item){
-        console.log(`El producto ${item} se agrego al carrito`);
+        const dataProducts = await this.nameItemsCart();
+        // console.log(dataProducts)
+        console.log(`El producto ${dataProducts[0].nombre} se agrego al carrito`);
     }
-
 }
 module.exports = Elements;

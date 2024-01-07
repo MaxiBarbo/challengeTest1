@@ -1,10 +1,10 @@
 [
   {
-    "description": "    Como usuario de la tienda\n    Quiero comprar productos exitosamente\n    Para verificar el correcto checkout de la tiena",
+    "description": "    Como usuario de la tienda\n    Quiero comprar todos los productos de la tienda exitosamente\n    Para verificar el correcto checkout de la tienda",
     "elements": [
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;agregar-todos-articulos-al-carrito-y-proceder-al-pago",
+        "id": "verificar-checkout-con-todos-los-productos-de-la-tienda;agregar-todos-articulos-al-carrito-y-proceder-al-pago",
         "keyword": "Scenario Outline",
         "line": 25,
         "name": "Agregar todos articulos al carrito y proceder al pago",
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1277785700
+              "duration": 2117344699
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1447573300
+              "duration": 2411586499
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2028502400
+              "duration": 1068641900
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3029284500
+              "duration": 3068314099
             }
           },
           {
@@ -102,7 +102,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3819201900
+              "duration": 3833091300
             }
           },
           {
@@ -115,7 +115,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3932934399
+              "duration": 4047443800
             }
           },
           {
@@ -128,7 +128,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3882125600
+              "duration": 3936955500
             }
           },
           {
@@ -141,7 +141,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1908904100
+              "duration": 1912793899
             }
           },
           {
@@ -154,7 +154,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1963503899
+              "duration": 2014547100
             }
           },
           {
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3817677400
+              "duration": 3821585299
             }
           },
           {
@@ -175,7 +175,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 272100
+              "duration": 962899
             }
           },
           {
@@ -183,7 +183,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 116600
+              "duration": 480499
             }
           }
         ],
@@ -196,10 +196,10 @@
         "type": "scenario"
       }
     ],
-    "id": "verificar-funcionamiento-del-carrito",
+    "id": "verificar-checkout-con-todos-los-productos-de-la-tienda",
     "line": 1,
     "keyword": "Feature",
-    "name": "Verificar funcionamiento del carrito",
+    "name": "Verificar checkout con todos los productos de la tienda",
     "tags": [],
     "uri": "src\\features\\Cart_Checkout.feature"
   },
@@ -208,17 +208,17 @@
     "elements": [
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
+        "id": "verificar-checkout-con-1-producto-de-la-tienda;compra-de-un-1-producto-en-la-tienda",
         "keyword": "Scenario",
         "line": 19,
-        "name": "Compra de 1 producto en la tienda",
+        "name": "Compra de un 1 producto en la tienda",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1218729000
+              "duration": 2089178500
             }
           },
           {
@@ -226,7 +226,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1449046400
+              "duration": 2560935299
             }
           },
           {
@@ -239,7 +239,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1302689800
+              "duration": 1401491400
             }
           },
           {
@@ -252,7 +252,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3006520099
+              "duration": 3061039000
             }
           },
           {
@@ -265,20 +265,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3873577300
+              "duration": 3970089499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "verifico que el precio '$29.99' sea el indicado por la tienda",
+            "name": "verifico que el precio $'$29.99' sea el indicado por la tienda",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_items_verify.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 1910724300
+              "duration": 1909285600
             }
           },
           {
@@ -291,7 +291,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3818294900
+              "duration": 3827776299
             }
           },
           {
@@ -304,7 +304,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1970844699
+              "duration": 2042326700
             }
           },
           {
@@ -317,7 +317,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2008028200
+              "duration": 2083972799
             }
           },
           {
@@ -330,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1908297099
+              "duration": 1913711699
             }
           },
           {
@@ -338,7 +338,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 223999
+              "duration": 330600
             }
           },
           {
@@ -346,13 +346,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 158600
+              "duration": 219999
             }
           }
         ],
         "tags": [
           {
-            "name": "@items-price",
+            "name": "@item-checkout",
             "line": 7
           }
         ],
@@ -360,17 +360,17 @@
       },
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
+        "id": "verificar-checkout-con-1-producto-de-la-tienda;compra-de-un-1-producto-en-la-tienda",
         "keyword": "Scenario",
         "line": 20,
-        "name": "Compra de 1 producto en la tienda",
+        "name": "Compra de un 1 producto en la tienda",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1247515799
+              "duration": 2094204799
             }
           },
           {
@@ -378,7 +378,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1438589200
+              "duration": 2521082599
             }
           },
           {
@@ -391,7 +391,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1400680400
+              "duration": 3470021100
             }
           },
           {
@@ -404,7 +404,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3045978200
+              "duration": 3087702900
             }
           },
           {
@@ -417,20 +417,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3875535699
+              "duration": 3957856599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "verifico que el precio '$9.99' sea el indicado por la tienda",
+            "name": "verifico que el precio $'$9.99' sea el indicado por la tienda",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_items_verify.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 1916114399
+              "duration": 1906569599
             }
           },
           {
@@ -443,7 +443,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3816602400
+              "duration": 3814130600
             }
           },
           {
@@ -456,7 +456,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1957842299
+              "duration": 2017064499
             }
           },
           {
@@ -469,7 +469,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2022659599
+              "duration": 2089809899
             }
           },
           {
@@ -482,7 +482,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1904043699
+              "duration": 1908246600
             }
           },
           {
@@ -490,7 +490,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 71999
+              "duration": 240199
             }
           },
           {
@@ -498,13 +498,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 44900
+              "duration": 723700
             }
           }
         ],
         "tags": [
           {
-            "name": "@items-price",
+            "name": "@item-checkout",
             "line": 7
           }
         ],
@@ -512,17 +512,17 @@
       },
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
+        "id": "verificar-checkout-con-1-producto-de-la-tienda;compra-de-un-1-producto-en-la-tienda",
         "keyword": "Scenario",
         "line": 21,
-        "name": "Compra de 1 producto en la tienda",
+        "name": "Compra de un 1 producto en la tienda",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1492606299
+              "duration": 2109299999
             }
           },
           {
@@ -530,7 +530,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1736359999
+              "duration": 2541127300
             }
           },
           {
@@ -543,7 +543,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2104279000
+              "duration": 1981087999
             }
           },
           {
@@ -556,7 +556,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3001485899
+              "duration": 3132673200
             }
           },
           {
@@ -569,20 +569,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3868012599
+              "duration": 3896676899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "verifico que el precio '$15.99' sea el indicado por la tienda",
+            "name": "verifico que el precio $'$15.99' sea el indicado por la tienda",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_items_verify.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 1909074099
+              "duration": 1914267000
             }
           },
           {
@@ -595,7 +595,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3813747000
+              "duration": 3815152300
             }
           },
           {
@@ -608,7 +608,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1966141000
+              "duration": 2036309499
             }
           },
           {
@@ -621,7 +621,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2033499799
+              "duration": 2265295299
             }
           },
           {
@@ -634,7 +634,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1914647700
+              "duration": 1911683600
             }
           },
           {
@@ -642,7 +642,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 50300
+              "duration": 181699
             }
           },
           {
@@ -650,13 +650,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 24599
+              "duration": 115500
             }
           }
         ],
         "tags": [
           {
-            "name": "@items-price",
+            "name": "@item-checkout",
             "line": 7
           }
         ],
@@ -664,17 +664,17 @@
       },
       {
         "description": "",
-        "id": "verificar-funcionamiento-del-carrito;compra-de-1-producto-en-la-tienda",
+        "id": "verificar-checkout-con-1-producto-de-la-tienda;compra-de-un-1-producto-en-la-tienda",
         "keyword": "Scenario",
         "line": 22,
-        "name": "Compra de 1 producto en la tienda",
+        "name": "Compra de un 1 producto en la tienda",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1227874200
+              "duration": 2127689800
             }
           },
           {
@@ -682,7 +682,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1495621600
+              "duration": 2503885600
             }
           },
           {
@@ -695,7 +695,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2577492300
+              "duration": 1403951299
             }
           },
           {
@@ -708,7 +708,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3006484599
+              "duration": 3037189500
             }
           },
           {
@@ -721,20 +721,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3871003600
+              "duration": 3918874500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "verifico que el precio '$49.99' sea el indicado por la tienda",
+            "name": "verifico que el precio $'$49.99' sea el indicado por la tienda",
             "match": {
               "location": "src\\features\\steps_definitions\\steps_items_verify.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 1907236599
+              "duration": 1904402599
             }
           },
           {
@@ -747,7 +747,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3816240099
+              "duration": 3829511599
             }
           },
           {
@@ -760,7 +760,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1969371199
+              "duration": 2024195699
             }
           },
           {
@@ -773,7 +773,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2014453899
+              "duration": 2091263599
             }
           },
           {
@@ -786,7 +786,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1911922699
+              "duration": 1912883300
             }
           },
           {
@@ -794,7 +794,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48900
+              "duration": 276100
             }
           },
           {
@@ -802,23 +802,23 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 21499
+              "duration": 166799
             }
           }
         ],
         "tags": [
           {
-            "name": "@items-price",
+            "name": "@item-checkout",
             "line": 7
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "verificar-funcionamiento-del-carrito",
+    "id": "verificar-checkout-con-1-producto-de-la-tienda",
     "line": 1,
     "keyword": "Feature",
-    "name": "Verificar funcionamiento del carrito",
+    "name": "Verificar checkout con 1 producto de la tienda",
     "tags": [],
     "uri": "src\\features\\items_verify_data.feature"
   }

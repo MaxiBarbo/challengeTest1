@@ -44,7 +44,7 @@ When('agrego el siguiente item {string} al carrito', async (producto) => {
     await page.locator('#shopping_cart_container a').click();
 });
 
-When('verifico que el precio {string} sea el indicado por la tienda', async (precio) => {
+When('verifico que el precio ${string} sea el indicado por la tienda', async (precio) => {
     await page.waitForTimeout(segundos)
     POM.verifyPriceOnCart(item,precio,productList)
     
