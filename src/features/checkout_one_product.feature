@@ -5,7 +5,7 @@ Feature: Verificar checkout con 1 producto de la tienda
     Para verificar el correcto checkout de la tienda
 
 @item-checkout
-Scenario: Compra de un 1 producto en la tienda
+Scenario: Comprar 1 producto de la tienda
     Given que he ingresado en 'https://www.saucedemo.com/'
     When inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda 
     When agrego el siguiente item '<producto>' al carrito 

@@ -5,7 +5,7 @@ Feature: Verificar checkout con todos los productos de la tienda
     Para verificar el correcto checkout de la tienda
 
 @cart-checkout
-Scenario Outline: Agregar todos articulos al carrito y proceder al pago
+Scenario: Comprar todos los productos de la tienda
     Given que he ingresado en la web: 'https://www.saucedemo.com/'
     When ingreso usuario 'standard_user' y contraseña 'secret_sauce' a la tienda 
     When que he agregado todos los productos de la lista al carrito

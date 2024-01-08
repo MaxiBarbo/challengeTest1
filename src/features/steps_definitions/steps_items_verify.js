@@ -10,21 +10,23 @@ let base_url
 let segundos = 1900
 let item
 let productList
+const browserName = 'fIrefox'
+const testName = 'Comprar 1 producto de la tienda'
 
 Before( { timeout: 10000 }, async () => {
     browser = await firefox.launch({ headless: true });
     page = await browser.newPage();
     POM = new Elements(page)
     base_url = new BASE_URL(page) 
-    const browserName = 'fIrefox'
-    // indicamos y verificamos que el tamño de pantalla sea eleligo (width/height)
-    console.log(`Tipo de navegador: ${browserName}`)
 });
 
 Given('que he ingresado en {string}', async (URL) => {
     await page.goto(URL)
-    base_url.screenDesktopSize(1920,1000)
     console.log(`URL Web: ${URL}`)
+    console.log('Test Name: ' + testName)
+    // indicamos y verificamos que el tamño de pantalla sea eleligo (width/height)
+    base_url.screenDesktopSize(1920,1000)
+    console.log(`Tipo de navegador: ${browserName}`)
 });
 
 When('inicio sesion usuario {string} y contraseña {string} a la tienda', async (user,password) => {

@@ -9,20 +9,24 @@ let base_url
 let POM
 let segundos = 1900
 let dataFeature
+const browserName = 'fIrefox'
+const testName = 'Comprar todos los productos de la tienda'
 
 Before( { timeout: 10000 }, async () => {
     browser = await firefox.launch({ headless: true });
     page = await browser.newPage();
     POM = new Elements(page)
     base_url = new BASE_URL(page) 
-    // indicamos y verificamos que el tamño de pantalla sea eleligo (width/height)
-    // base_url.screenMobileSizeIphone12(390,844)
-    base_url.screenDesktopSize(1920,1000)
 });
 
 Given('que he ingresado en la web: {string}', async (URL) => {
     await page.goto(URL)
     console.log('URL Web:' + URL)
+    console.log('Test Name: ' + testName)
+    // indicamos y verificamos que el tamño de pantalla sea eleligo (width/height)
+    // base_url.screenMobileSizeIphone12(390,844)
+    base_url.screenDesktopSize(1920,1000)
+    console.log(`Tipo de navegador: ${browserName}`)
 });
 
 When('ingreso usuario {string} y contraseña {string} a la tienda', async (name,pass) => {
