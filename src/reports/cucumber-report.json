@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2063298300
+              "duration": 1399240100
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 7,
             "name": "que he iniciado sesion en la url tienda SauceDemo 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:22"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:23"
             },
             "result": {
               "status": "passed",
-              "duration": 2269443099
+              "duration": 4718757099
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3016427100
+              "duration": 3014733199
             }
           },
           {
@@ -94,7 +94,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1462399
+              "duration": 1443499
             }
           },
           {
@@ -107,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1913037900
+              "duration": 1918884700
             }
           },
           {
@@ -116,11 +116,11 @@
             "line": 20,
             "name": "selecciono el producto2 'Fleece Jacket' y lo agrego al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:52"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1933499
+              "duration": 2061900
             }
           },
           {
@@ -129,11 +129,11 @@
             "line": 21,
             "name": "deberia ver los productos agregados al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:56"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 4007053600
+              "duration": 4015604600
             }
           },
           {
@@ -142,11 +142,11 @@
             "line": 22,
             "name": "el subtotal1 del carrito debe ser $'79.98'",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:66"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:67"
             },
             "result": {
               "status": "passed",
-              "duration": 3821665600
+              "duration": 3829809599
             }
           },
           {
@@ -154,7 +154,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 242999
+              "duration": 152300
             }
           }
         ],
@@ -178,7 +178,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1940567099
+              "duration": 1321383800
             }
           },
           {
@@ -187,11 +187,11 @@
             "line": 7,
             "name": "que he iniciado sesion en la url tienda SauceDemo 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:22"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:23"
             },
             "result": {
               "status": "passed",
-              "duration": 1775896899
+              "duration": 2823751400
             }
           },
           {
@@ -204,7 +204,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2998627399
+              "duration": 3004236000
             }
           },
           {
@@ -258,7 +258,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 183099
+              "duration": 198499
             }
           },
           {
@@ -267,11 +267,11 @@
             "line": 26,
             "name": "que tengo los productos 'Bike Light' y 'Onesie' en el carrito de compras",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:74"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:75"
             },
             "result": {
               "status": "passed",
-              "duration": 3868274699
+              "duration": 3886655099
             }
           },
           {
@@ -280,11 +280,11 @@
             "line": 27,
             "name": "elimino el producto2 'Onesie' del carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:84"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:86"
             },
             "result": {
               "status": "passed",
-              "duration": 1910305400
+              "duration": 1919498799
             }
           },
           {
@@ -293,11 +293,11 @@
             "line": 28,
             "name": "deberia ver que el producto2 'Onesie' ya no esta en el carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:90"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:92"
             },
             "result": {
               "status": "passed",
-              "duration": 3810632600
+              "duration": 3832650299
             }
           },
           {
@@ -306,11 +306,11 @@
             "line": 29,
             "name": "el subtotal2 del carrito debe ser $'9.99'",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:97"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:99"
             },
             "result": {
               "status": "passed",
-              "duration": 3904615399
+              "duration": 3987418500
             }
           },
           {
@@ -318,7 +318,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 101700
+              "duration": 101400
             }
           }
         ],

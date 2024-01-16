@@ -10,10 +10,11 @@ let POM
 let dataFeature
 let segundos = 1900
 const browserName = 'firefox'
-const testName = '@agregar-producto'
+const escenario1 = '@agregar-producto'
+const escenario2 = '@eliminar-producto'
 
 Before( { timeout: 10000 }, async () => {
-    browser = await firefox.launch({ headless: false });
+    browser = await firefox.launch({ headless: true });
     page = await browser.newPage();
     POM = new Elements(page)
     base_url = new BASE_URL(page) 
@@ -22,7 +23,6 @@ Before( { timeout: 10000 }, async () => {
 Given('que he iniciado sesion en la url tienda SauceDemo {string}', async (URL) => {
     await page.goto(URL)
     console.log('URL Web:' + URL)
-    console.log('Test Name: ' + testName)
     // indicamos y verificamos que el tamño de pantalla sea eleligo (width/height)
     base_url.screenMobileSizeIphone12(390,844)
     // base_url.screenDesktopSize(1920,1000)
@@ -45,6 +45,7 @@ Then('tengo los siguientes productos en la tienda:', async (dataTable) => {
 // Escenario @agregar-producto
 
 When('selecciono el producto1 {string} y lo agrego al carrito', async (producto1) => {
+    console.log('Test Name: ' + escenario1)
     await page.waitForTimeout(segundos)
     POM.addProduct(producto1)
 });
@@ -72,6 +73,7 @@ Then('el subtotal1 del carrito debe ser ${string}', async (subTotal) => {
 // Escenario @eliminar-producto
 
 Given('que tengo los productos {string} y {string} en el carrito de compras', async (producto1, producto2) => {
+    console.log('Test Name: ' + escenario2)
     POM.addProduct(producto1)
     POM.addProduct(producto2)
     await page.waitForTimeout(segundos)
