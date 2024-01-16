@@ -18,6 +18,7 @@ class Elements {
         this.firstName = 'input[name="firstName"]'
         this.lastName = 'input[name="lastName"]'
         this.postalCode = 'input[name="postalCode"]'
+        this.iconCart = page.locator('.shopping_cart_link')
     }
 
     async enterUsername(username) {
@@ -100,6 +101,141 @@ class Elements {
 
     async addItemCart(producto){
         await this.page.locator(`[data-test="add-to-cart-sauce-labs-${producto}"]`).click()
+    }
+
+    async agregarProducto(producto){
+        let productoMinuscula = producto.toLowerCase().replace(/\s/g, '')
+        await this.page.locator(`[data-test="add-to-cart-sauce-labs-${producto}"]`).click()   
+        console.log(`Se agrega el producto: ${productoMinuscula} al carrito`)
+    }
+
+    async verifyCheckout(subTotal){
+        let itemsCarrito = await this.nameItemsCart()
+        const preciosCarrito = itemsCarrito.map(dato => dato.precio)
+        const sumaPrecios = preciosCarrito.reduce((total, precio) => total + parseFloat(precio), 0); 
+        
+        const subTotalObtenido = await this.value_subtotal.textContent()
+        const subTotalValue = subTotalObtenido.match(/\d+\.\d+/)
+
+        const tax = await this.value_tax.textContent()
+        const taxValue = tax.match(/\d+\.\d+/)  
+        
+        let totalValueAmount = await this.totalValue.textContent() 
+        let totalAmount = totalValueAmount.match(/\d+\.\d+/)    
+
+        let totalPrecio = parseFloat(taxValue[0]) + parseFloat(sumaPrecios)
+        let totalReducido = totalPrecio.toFixed(2)
+
+        // Validacion del subTotal extraido de la feature vs subTotal extraido de la suma de productos en el carrito
+        expect(parseFloat(subTotal)).to.equal(parseFloat(sumaPrecios))
+        // Validacion del subTotal extraido de la feature vs subTotal extraido de la etiqueta "item Total" en "Price Total"
+        expect(parseFloat(subTotal)).to.equal(parseFloat(subTotalValue[0]))
+        // Validacion de total extraido en la suma del tax y la suma de productos en el carrito vs el total obtenido en la etiqueta de la tienda "Total"
+        expect(totalAmount[0]).to.equal(totalReducido)
+
+        console.log(`Monto en carrito: sub-total $${sumaPrecios} + Tax: $${taxValue[0]} = $${totalAmount[0]}`)
+    }
+
+    async verifyProducts(producto1,producto2){
+        let itemsCarrito = await this.nameItemsCart()
+        const nombresEnCarrito = itemsCarrito.map(dato => dato.nombre.toLowerCase().replace(/[\s-]/g, ''))
+
+        let producto1Buscado = producto1.toLowerCase().replace(/[\s-]/g, '')
+        let producto2Buscado = producto2.toLowerCase().replace(/[\s-]/g, '')
+
+        const encontrado1 = nombresEnCarrito.some(cadena => cadena.includes(producto1Buscado))
+        const encontrado2 = nombresEnCarrito.some(cadena => cadena.includes(producto2Buscado))
+
+        expect(encontrado1, `El producto ${producto1Buscado} no está presente en el carrito.`).to.be.true;
+        expect(encontrado2, `El producto ${producto2Buscado} no está presente en el carrito.`).to.be.true;
+    }
+
+    async verifyProductNotInCart(producto2){
+        const productoVisible = await this.page.isVisible(`text=${producto2}`);
+        expect(productoVisible, `El producto ${producto2} está presente en el carrito.`).to.be.false;
+    }
+
+    async productsOnCart(){
+        let itemsCarrito = await this.nameItemsCart()
+        console.log(itemsCarrito)
+    }
+
+    async addProduct(name){
+        const nameProduct = name.toLowerCase()
+        switch(nameProduct){
+            case 'bike light':
+                await this.page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
+                console.log(`El producto: ${nameProduct} se agrega al carrito`);
+            break;
+            
+            case 'backpack':
+                await this.page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+                console.log(`El producto: ${nameProduct} se agrega al carrito`);
+            break;
+            
+            case 'onesie':
+                await this.page.locator('[data-test="add-to-cart-sauce-labs-onesie"]').click();
+                console.log(`El producto: ${nameProduct} se agrega al carrito`);
+            break;  
+
+            case 'fleece jacket':
+                await this.page.locator('[data-test="add-to-cart-sauce-labs-fleece-jacket"]').click();
+                console.log(`El producto: ${nameProduct} se agrega al carrito`);
+            break;  
+
+            case 'bolt t-shirt':
+                await this.page.locator('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click();
+                console.log(`El producto: ${nameProduct} se agrega al carrito`);
+            break;  
+
+            case 't-shirt red':
+                await page.locator('[data-test="add-to-cart-test\\.allthethings\\(\\)-t-shirt-\\(red\\)"]').click();
+                console.log(`El producto: ${nameProduct} se agrega al carrito`);
+            break; 
+
+            default:
+                console.log('Producto no reconocido');
+                break;
+        }
+    }
+
+    async deleteProducto(name){
+        const nameProduct = name.toLowerCase()
+        switch(nameProduct){
+            case 'bike light':
+                await this.page.locator('[data-test="remove-sauce-labs-bike-light"]').click();
+                console.log(`El producto ${nameProduct} fue eliminado del carrito`);
+            break;
+            
+            case 'backpack':
+                await this.page.locator('[data-test="remove-sauce-labs-backpack"]').click();
+                console.log(`El producto ${nameProduct} fue eliminado del carrito`);
+            break;
+            
+            case 'onesie':
+                await this.page.locator('[data-test="remove-sauce-labs-onesie"]').click();
+                console.log(`El producto ${nameProduct} fue eliminado del carrito`);
+            break;  
+
+            case 'fleece jacket':
+                await this.page.locator('[data-test="remove-sauce-labs-fleece-jacket"]').click();
+                console.log(`El producto ${nameProduct} fue eliminado del carrito`);
+            break;  
+
+            case 'bolt t-shirt':
+                await this.page.locator('[data-test="remove-sauce-labs-bolt-t-shirt"]').click();
+                console.log(`El producto ${nameProduct} fue eliminado del carrito`);
+            break;  
+
+            case 't-shirt red':
+                await this.page.locator('[data-test="remove-test\\.allthethings\\(\\)-t-shirt-\\(red\\)"]').click();
+                console.log(`El producto ${nameProduct} fue eliminado del carrito`);
+            break; 
+
+            default:
+                console.log('Producto no reconocido');
+                break;
+        }
     }
 
     async addMultipleItemsOnCart(){
@@ -252,6 +388,31 @@ class Elements {
         const dataProducts = await this.nameItemsCart();
         // console.log(dataProducts)
         console.log(`El producto ${dataProducts[0].nombre} se agrego al carrito`);
+    }
+
+    async verifyStatusCart(){
+        const numElementosInicial = await this.page.$$('.shopping_cart_badge');
+        // Compara los números inicial y después de agregar el producto
+        assert.strictEqual(numElementosInicial.length, 0, 'El carrito no está vacío después de eliminar productos')
+        if (numElementosInicial.length === 0) {
+        console.log('El carrito de compras esta vacio al iniciar');
+        } else {
+        throw new Error(`El carrito de compra tiene productos`);
+        }
+    }
+
+    async countItemsIconCart(){
+        const cartBadgeText = await this.page.$eval('.shopping_cart_badge', (span) => span.innerText);
+
+    }
+
+    async countItemsCart(producto){
+        const cartItemsCount = await this.page.$$eval('.cart_item', (items) => items.length);
+        if (cartItemsCount > 0) {
+            console.log(`El carrito tiene ${cartItemsCount} producto`)
+        } else {
+            console.log(`El producto ${producto} fue eliminado del carrito`)
+        }
     }
 }
 module.exports = Elements;

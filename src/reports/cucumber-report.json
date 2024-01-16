@@ -1,54 +1,46 @@
 [
   {
-    "description": "    Como usuario de la tienda\n    Quiero comprar todos los productos de la tienda exitosamente\n    Para verificar el correcto checkout de la tienda",
+    "description": "    Como cliente de la tienda SauceDemo\n    Quiero agregar y eliminar productos de mi Carrito\n    Para poder revisar y realizar Compras",
     "elements": [
       {
         "description": "",
-        "id": "verificar-checkout-con-todos-los-productos-de-la-tienda;comprar-todos-los-productos-de-la-tienda",
+        "id": "uso-del-carrito-de-compras;agregar-productos-al-carrito-de-compras",
         "keyword": "Scenario",
-        "line": 25,
-        "name": "Comprar todos los productos de la tienda",
+        "line": 18,
+        "name": "Agregar productos al carrito de compras",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1560602899
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1548563000
+              "duration": 2063298300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
-            "name": "que he ingresado en la web: 'https://www.saucedemo.com/'",
+            "line": 7,
+            "name": "que he iniciado sesion en la url tienda SauceDemo 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:22"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1153355400
+              "duration": 2269443099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
-            "name": "ingreso usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
+            "line": 8,
+            "name": "ingreso mi usuario 'standard_user' y contraseña 'secret_sauce'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:32"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 3022944999
+              "duration": 3016427100
             }
           },
           {
@@ -57,8 +49,8 @@
                 "rows": [
                   {
                     "cells": [
-                      "Nombre",
-                      "Precio esperado"
+                      "Producto",
+                      "Precio"
                     ]
                   },
                   {
@@ -94,80 +86,67 @@
                 ]
               }
             ],
-            "keyword": "When ",
-            "line": 11,
-            "name": "que he agregado todos los productos de la lista al carrito",
+            "keyword": "Then ",
+            "line": 9,
+            "name": "tengo los siguientes productos en la tienda:",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:39"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 3817172699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "ingreso al carrito de compras",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3942110899
+              "duration": 1462399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 19,
-            "name": "ingreso datos personales para completar el checkout 'lilia', 'Marin', '2002'",
+            "name": "selecciono el producto1 'Backpack' y lo agrego al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:54"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 3900137099
+              "duration": 1913037900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 20,
-            "name": "verifico los productos y el valor total del saldo acumulado en el carrito",
+            "name": "selecciono el producto2 'Fleece Jacket' y lo agrego al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:61"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 1917786300
+              "duration": 1933499
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 21,
-            "name": "confirmo la compra en 'finish'",
+            "name": "deberia ver los productos agregados al carrito",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:67"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:56"
             },
             "result": {
               "status": "passed",
-              "duration": 1954260499
+              "duration": 4007053600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 22,
-            "name": "recibo la confirmacion exitosa 'Thank you for your order!'",
+            "name": "el subtotal1 del carrito debe ser $'79.98'",
             "match": {
-              "location": "src\\features\\steps_definitions\\steps_cart_checkout.js:72"
+              "location": "src\\features\\steps_definitions\\cart_functions.js:66"
             },
             "result": {
               "status": "passed",
-              "duration": 3811527400
+              "duration": 3821665600
             }
           },
           {
@@ -175,651 +154,188 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 301699
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 159900
+              "duration": 242999
             }
           }
         ],
         "tags": [
           {
-            "name": "@cart-checkout",
-            "line": 7
+            "name": "@agregar-producto",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "uso-del-carrito-de-compras;eliminar-producto-del-carrito-de-compras",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Eliminar producto del carrito de compras",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1940567099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que he iniciado sesion en la url tienda SauceDemo 'https://www.saucedemo.com/'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\cart_functions.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1775896899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "ingreso mi usuario 'standard_user' y contraseña 'secret_sauce'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\cart_functions.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2998627399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Producto",
+                      "Precio"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Backpack",
+                      "29.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bike Light",
+                      "9.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bolt T-Shirt",
+                      "15.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Fleece Jacket",
+                      "49.99"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Onesie",
+                      "7.99"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "tengo los siguientes productos en la tienda:",
+            "match": {
+              "location": "src\\features\\steps_definitions\\cart_functions.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "que tengo los productos 'Bike Light' y 'Onesie' en el carrito de compras",
+            "match": {
+              "location": "src\\features\\steps_definitions\\cart_functions.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3868274699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "elimino el producto2 'Onesie' del carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\cart_functions.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1910305400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "deberia ver que el producto2 'Onesie' ya no esta en el carrito",
+            "match": {
+              "location": "src\\features\\steps_definitions\\cart_functions.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3810632600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "el subtotal2 del carrito debe ser $'9.99'",
+            "match": {
+              "location": "src\\features\\steps_definitions\\cart_functions.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3904615399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 101700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@eliminar-producto",
+            "line": 24
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "verificar-checkout-con-todos-los-productos-de-la-tienda",
+    "id": "uso-del-carrito-de-compras",
     "line": 1,
     "keyword": "Feature",
-    "name": "Verificar checkout con todos los productos de la tienda",
+    "name": "Uso del Carrito de Compras",
     "tags": [],
-    "uri": "src\\features\\checkout_all_products.feature"
-  },
-  {
-    "description": "    Como usuario de la tienda SauceDemo\n    Quiero comprar 1 producto exitosamente\n    Para verificar el correcto checkout de la tienda",
-    "elements": [
-      {
-        "description": "",
-        "id": "verificar-checkout-con-1-producto-de-la-tienda;comprar-1-producto-de-la-tienda",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Comprar 1 producto de la tienda",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1306131500
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1446787999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "que he ingresado en 'https://www.saucedemo.com/'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1136754999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3012365999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "agrego el siguiente item 'backpack' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3891251499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "verifico que el precio $'$29.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1911740000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3824542499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "ingreso al 'checkout' los datos firstName 'max', lastName 'power', postalCode '1986'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1979837499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "completo la compra 'finish'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2014707500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "recibo mensaje 'Thank you for your order!'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:74"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1913555400
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 116600
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 49899
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@item-checkout",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-checkout-con-1-producto-de-la-tienda;comprar-1-producto-de-la-tienda",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Comprar 1 producto de la tienda",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1208189899
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1429341600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "que he ingresado en 'https://www.saucedemo.com/'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1096844699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2996371599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "agrego el siguiente item 'bike-light' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3871902600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "verifico que el precio $'$9.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1906369599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3819220300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "ingreso al 'checkout' los datos firstName 'clari', lastName 'sun', postalCode '0001'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1964787900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "completo la compra 'finish'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2017945500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "recibo mensaje 'Thank you for your order!'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:74"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1913107999
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 124900
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 146200
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@item-checkout",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-checkout-con-1-producto-de-la-tienda;comprar-1-producto-de-la-tienda",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Comprar 1 producto de la tienda",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1252407700
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1451517100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "que he ingresado en 'https://www.saucedemo.com/'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1377552300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2999883200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "agrego el siguiente item 'bolt-t-shirt' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3862518599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "verifico que el precio $'$15.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1903913600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3817845499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "ingreso al 'checkout' los datos firstName 'lali', lastName 'sari', postalCode '9999'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1974652199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "completo la compra 'finish'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2014855499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "recibo mensaje 'Thank you for your order!'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:74"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1912905799
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 72300
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 23699
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@item-checkout",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "verificar-checkout-con-1-producto-de-la-tienda;comprar-1-producto-de-la-tienda",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "Comprar 1 producto de la tienda",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1366339999
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1732553400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "que he ingresado en 'https://www.saucedemo.com/'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1010157700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3044853399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "agrego el siguiente item 'fleece-jacket' al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3857538399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "verifico que el precio $'$49.99' sea el indicado por la tienda",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1907274699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "el item se agrega al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3826998799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "ingreso al 'checkout' los datos firstName 'juli', lastName 'love', postalCode '0101'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1975109799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "completo la compra 'finish'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1998734100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "recibo mensaje 'Thank you for your order!'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\steps_items_verify.js:74"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1912092700
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 53399
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 23299
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@item-checkout",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "verificar-checkout-con-1-producto-de-la-tienda",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Verificar checkout con 1 producto de la tienda",
-    "tags": [],
-    "uri": "src\\features\\checkout_one_product.feature"
+    "uri": "src\\features\\cart_functions.feature"
   }
 ]

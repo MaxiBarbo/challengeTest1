@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js test",
-    "testag": "cucumber-js test --tags @items-price",
+    "testag": "cucumber-js test --tags @eliminar-producto",
     "report": "npx ts-node src/helper/report.ts",
     "codegen": "npx playwright codegen https://www.saucedemo.com/"
   },

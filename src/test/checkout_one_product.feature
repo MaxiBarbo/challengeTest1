@@ -10,8 +10,8 @@ Scenario: Comprar 1 producto de la tienda
     When inicio sesion usuario 'standard_user' y contraseña 'secret_sauce' a la tienda 
     When agrego el siguiente item '<producto>' al carrito 
     When verifico que el precio $'<precio>' sea el indicado por la tienda
-    Then el item se agrega al carrito 
-    Then ingreso al 'checkout' los datos firstName '<firstName>', lastName '<lastName>', postalCode '<postalCode>'
+    When el item se agrega al carrito 
+    When ingreso al 'checkout' los datos firstName '<firstName>', lastName '<lastName>', postalCode '<postalCode>'
     Then completo la compra 'finish'
     Then recibo mensaje 'Thank you for your order!'
 Examples:
