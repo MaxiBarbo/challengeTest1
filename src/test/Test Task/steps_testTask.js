@@ -1,7 +1,7 @@
 const { Given, When, Then, Before, After } = require('@cucumber/cucumber');
 const { expect, assert } = require('chai');
 const { chromium } = require('playwright');
-const Elements = require('../features/pages/pom')
+const Elements = require('../../features/pages/pom')
 const Functions = require('../features/pages/api_response')
 require('dotenv').config()
 

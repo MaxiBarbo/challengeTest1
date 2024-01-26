@@ -36,16 +36,16 @@ When('ingreso mi usuario {string} y contraseña {string}', async (user,password)
     await page.waitForTimeout(segundos)
 });
 
-
 Then('tengo los siguientes productos en la tienda:', async (dataTable) => {
     dataFeature = dataTable
-
 });
 
 // Escenario @agregar-producto
 
 When('selecciono el producto1 {string} y lo agrego al carrito', async (producto1) => {
     console.log('Test Name: ' + escenario1)
+    await page.waitForTimeout(segundos)
+    POM.haveText(dataFeature)
     await page.waitForTimeout(segundos)
     POM.addProduct(producto1)
 });
@@ -103,12 +103,11 @@ Then('el subtotal2 del carrito debe ser ${string}', async (subTotal) => {
     await page.locator('[data-test="continue"]').click();
     POM.verifyCheckout(subTotal)
     await page.waitForTimeout(segundos)
-
 });
 
 After( async () => {
 // Cerrar el navegador después de cada escenario
     if (this.browser) {
     await this.browser.close();
-}
+    }
 });

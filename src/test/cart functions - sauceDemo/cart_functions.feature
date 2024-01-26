@@ -2,7 +2,7 @@ Feature: Uso del Carrito de Compras
     Como cliente de la tienda SauceDemo
     Quiero agregar y eliminar productos de mi Carrito
     Para poder revisar y realizar Compras
-
+    
 Background: 
     Given que he iniciado sesion en la url tienda SauceDemo 'https://www.saucedemo.com/' 
     When ingreso mi usuario 'standard_user' y contraseña 'secret_sauce'
@@ -13,6 +13,7 @@ Background:
         | Sauce Labs Bolt T-Shirt           | 15.99           |
         | Sauce Labs Fleece Jacket          | 49.99           |
         | Sauce Labs Onesie                 | 7.99            |
+        | Test.allTheThings() T-Shirt (Red) | 15.99           |
 
 @agregar-producto
 Scenario: Agregar productos al carrito de compras

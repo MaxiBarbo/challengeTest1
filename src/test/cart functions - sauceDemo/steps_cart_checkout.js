@@ -1,8 +1,8 @@
 const { Given, When, Then, Before, After } = require('@cucumber/cucumber');
 const { expect, assert } = require('chai');
 const { chromium, firefox } = require('playwright');
-const Elements = require('../features/pages/pom')
-const BASE_URL = require('../utils/url-verify')
+const Elements = require('../../features/pages/pom')
+const BASE_URL = require('../../utils/url-verify')
 
 let browser, page;
 let base_url

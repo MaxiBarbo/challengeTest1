@@ -1,152 +1,72 @@
 [
   {
-    "description": "    Como cliente de la tienda SauceDemo\n    Quiero agregar y eliminar productos de mi Carrito\n    Para poder revisar y realizar Compras",
+    "description": "    Feature Description",
     "elements": [
       {
         "description": "",
-        "id": "uso-del-carrito-de-compras;agregar-productos-al-carrito-de-compras",
+        "id": "visual-testing-en-la-home-page-de-la-tienda;validacion-visual-de-imagenes-de-productos",
         "keyword": "Scenario",
-        "line": 18,
-        "name": "Agregar productos al carrito de compras",
+        "line": 5,
+        "name": "Validacion visual de imagenes de productos",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1399240100
+              "duration": 2013191500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 6,
             "name": "que he iniciado sesion en la url tienda SauceDemo 'https://www.saucedemo.com/'",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:23"
+              "location": "src\\features\\steps_definitions\\steps_login_sauceDemo.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 4718757099
+              "duration": 1005235900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
+            "line": 7,
             "name": "ingreso mi usuario 'standard_user' y contraseña 'secret_sauce'",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:32"
+              "location": "src\\features\\steps_definitions\\steps_login_sauceDemo.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 3014733199
+              "duration": 2056503499
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Producto",
-                      "Precio"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Backpack",
-                      "29.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Bike Light",
-                      "9.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Bolt T-Shirt",
-                      "15.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Fleece Jacket",
-                      "49.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Onesie",
-                      "7.99"
-                    ]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "tengo los siguientes productos en la tienda:",
+            "line": 8,
+            "name": "accedo a los datos parametrizados en Excel",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:40"
+              "location": "src\\features\\steps_definitions\\steps_login_sauceDemo.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 1443499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "selecciono el producto1 'Backpack' y lo agrego al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:47"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1918884700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "selecciono el producto2 'Fleece Jacket' y lo agrego al carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2061900
+              "duration": 1717999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
-            "name": "deberia ver los productos agregados al carrito",
+            "line": 9,
+            "name": "accedo a los datos parametrizados en google sheets",
             "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:57"
+              "location": "src\\features\\steps_definitions\\steps_login_sauceDemo.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 4015604600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "el subtotal1 del carrito debe ser $'79.98'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:67"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3829809599
+              "duration": 1717400
             }
           },
           {
@@ -154,188 +74,19 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 152300
+              "duration": 1911105300
             }
           }
         ],
-        "tags": [
-          {
-            "name": "@agregar-producto",
-            "line": 17
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "uso-del-carrito-de-compras;eliminar-producto-del-carrito-de-compras",
-        "keyword": "Scenario",
-        "line": 25,
-        "name": "Eliminar producto del carrito de compras",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1321383800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "que he iniciado sesion en la url tienda SauceDemo 'https://www.saucedemo.com/'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2823751400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "ingreso mi usuario 'standard_user' y contraseña 'secret_sauce'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3004236000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Producto",
-                      "Precio"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Backpack",
-                      "29.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Bike Light",
-                      "9.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Bolt T-Shirt",
-                      "15.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Fleece Jacket",
-                      "49.99"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Sauce Labs Onesie",
-                      "7.99"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "tengo los siguientes productos en la tienda:",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 198499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 26,
-            "name": "que tengo los productos 'Bike Light' y 'Onesie' en el carrito de compras",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:75"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3886655099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 27,
-            "name": "elimino el producto2 'Onesie' del carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:86"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1919498799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "deberia ver que el producto2 'Onesie' ya no esta en el carrito",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:92"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3832650299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "el subtotal2 del carrito debe ser $'9.99'",
-            "match": {
-              "location": "src\\features\\steps_definitions\\cart_functions.js:99"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3987418500
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 101400
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@eliminar-producto",
-            "line": 24
-          }
-        ],
+        "tags": [],
         "type": "scenario"
       }
     ],
-    "id": "uso-del-carrito-de-compras",
+    "id": "visual-testing-en-la-home-page-de-la-tienda",
     "line": 1,
     "keyword": "Feature",
-    "name": "Uso del Carrito de Compras",
+    "name": "Visual Testing en la Home Page de la Tienda",
     "tags": [],
-    "uri": "src\\features\\cart_functions.feature"
+    "uri": "src\\features\\scenarios\\saucedemo\\data_sheets.feature"
   }
 ]

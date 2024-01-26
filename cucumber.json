@@ -9,6 +9,7 @@
         "dryRun": false,
         "require":[
             "src/features/steps_definitions/*.js",
+            "src/features/steps_definitions/*.ts",
             "src/hooks/hooks.ts"
         ],
         "requireModule":[

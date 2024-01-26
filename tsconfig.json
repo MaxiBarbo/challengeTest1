@@ -1,0 +1,18 @@
+{
+"compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "./dist"
+},
+    "include": [
+        "./src/**/*.ts",
+        "./src/features/**/*.feature"
+    ],
+    "exclude": ["node_modules"]
+}

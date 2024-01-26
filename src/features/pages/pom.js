@@ -1,6 +1,7 @@
 const { expect, assert } = require('chai');
 require('dotenv').config()
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
+const accessGoogleSheet = require('../pages/googleSheetAcces');
 
 class Elements {
     constructor(page){
@@ -36,8 +37,17 @@ class Elements {
     }
 
     async loginUser(email,pass){
-        await this.page.fill(this.usernameInputSelector, email);
-        await this.page.fill(this.passwordInputSelector, pass); 
+        const spreadsheetId = '1N2_if3nb_-VFPVxs3g3n5j9L1Agtw886CivwWUpO9DM';
+        const apiKey = 'AIzaSyBeuLvEvy5QXAiJnq-7YGa1TWTqYsBdJlU';
+        const range = 'login!A1:J38';
+
+        let emailSheet = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 0);
+        let passSheet = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 1);
+        console.log(emailSheet)
+        console.log(passSheet)
+
+        await this.page.fill(this.usernameInputSelector, emailSheet);
+        await this.page.fill(this.passwordInputSelector, passSheet); 
     }
 
     async selectSortOption(string1,string2) {
@@ -403,7 +413,6 @@ class Elements {
 
     async countItemsIconCart(){
         const cartBadgeText = await this.page.$eval('.shopping_cart_badge', (span) => span.innerText);
-
     }
 
     async countItemsCart(producto){
@@ -413,6 +422,30 @@ class Elements {
         } else {
             console.log(`El producto ${producto} fue eliminado del carrito`)
         }
+    }
+
+    async haveText(dataFeature){
+        //Datos de nombre obtenidos de la feature para luego utilizarlos en la validacion de textos
+        const dataTable = dataFeature.raw();
+        const [headers, ...data] = dataTable;
+        const datosValidacion = data.map(row => ({
+            nombre: row[0],
+        }));
+        // Datos de nombre extraido de la classe '.inventory_item_name' del dom
+        const elementos = await this.page.$$('.inventory_item_name');
+        const textos = await Promise.all(elementos.map(async (elemento) => {
+            return await elemento.innerText();
+        }));
+        
+        try {
+        datosValidacion.forEach(elemento => {
+            expect(textos).to.include(elemento.nombre)
+        })    
+        } catch (error) {
+            throw new Error(error.message + 'Texto del producto no encontrado');
+        }
+        // console.log(datosValidacion)
+        // console.log(textos)
     }
 }
 module.exports = Elements;
