@@ -9,15 +9,14 @@ runme:
 [ Agregar titulo descriptivo ]
 
 
-|                 |                                        |
-|----------------------|----------------------------------------------|
-| **Id:**              | Login_001 | ID_06                           |
-| **Título:**          | Pagina en blanco al ingresar formato Email incorrecto |
-| **Día del Reporte:** | [Fecha del reporte]                           |
-| **Dispositivo / Navegador:** | Laptop Hp Pavilion Gaming, Windows 11 64 bits - Google Chrome |
-| **Tipo de Defecto:** | Visual                                       |
-| **Prioridad:**       | [Alta/Media/Baja]                            |
-| **Asignado a:**      | Front End                                    |
+|                              |                                              |
+|------------------------------|----------------------------------------------|
+| **Id:**                      | [Identificador del caso de prueba]           |
+| **Día del Reporte:**         | [Fecha del reporte]                          |
+| **Dispositivo / Navegador:** | [Ubuntu-Windows - Chrome-Firefox-Edge]       |
+| **Tipo de Defecto:**         | Visual-Funcional-Contenido-Crash-Performance |
+| **Prioridad:**               | [Alta/Media/Baja]                            |
+| **Asignado a:**              | FrontEnd-Backend-Diseño                      |
 
 ## Pasos de Reproduccion
 
