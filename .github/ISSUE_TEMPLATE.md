@@ -6,7 +6,7 @@ runme:
 
 ### 📝 Bug Report
 
-|  [Nombre del Proyecto]       | <img src="./docs/logo.png" alt="Icono de éxito" width="100"/>  |
+|  [Nombre del Proyecto]       | <img src="../docs/logo.png" alt="Icono de éxito" width="100"/>  |
 |------------------------------|----------------------------------------------|
 | **Id:**                      | [Identificador del caso de prueba]           |
 | **Día del Reporte:**         | [Fecha del reporte]                          |
