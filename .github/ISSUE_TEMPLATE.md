@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HN3MNZ3YZDW9WSRSHS5VS0ME
-  version: v2.2
----
-
 ## Titulo
 
 [ Agregar titulo descriptivo ]
