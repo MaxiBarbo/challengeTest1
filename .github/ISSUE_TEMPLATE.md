@@ -4,10 +4,7 @@ runme:
   version: v2.2
 ---
 
-## Titulo
-
-[ Agregar titulo descriptivo ]
-
+### 📝 Bug Report
 
 |                              |                                              |
 |------------------------------|----------------------------------------------|
@@ -21,7 +18,8 @@ runme:
 ## Pasos de Reproduccion
 
 Pre-requisitos: n/a
-1. Ingresar URL: 
+
+1. Ingresar URL:
 2. [Segundo paso]
 3. [...]
 
