@@ -30,9 +30,3 @@ Pre-requisitos: n/a
 ## Capturas de Pantalla
 
 [Si es aplicable, adjunte capturas de pantalla.]
-
-## Entorno
-
-- Sistema Operativo:
-- Navegador/Versión:
-- [...]
