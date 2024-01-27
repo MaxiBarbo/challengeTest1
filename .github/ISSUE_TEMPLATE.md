@@ -34,3 +34,6 @@ Pre-requisitos: n/a
 ## `Capturas de Pantalla`
 
 [ agregar adjuntos de imagen o video]
+
+**Tester:**
+[ Nombre ]
