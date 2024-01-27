@@ -4,7 +4,7 @@ runme:
   version: v2.2
 ---
 
-### <img align="center" width="20" alt="Shimarin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXeGR2RyhCZtjyQ0AnrgaHH-QRE2rnfiJOw&usqp=CAU"/>  Bug Report
+### <img align="center" width="30" alt="no-country" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXeGR2RyhCZtjyQ0AnrgaHH-QRE2rnfiJOw&usqp=CAU"/> Bug Report
 
 | **Proyecto:**                | [Nombre del proyecto] |
 |------------------------------|----------------------------------------------|
