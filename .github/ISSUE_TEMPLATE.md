@@ -4,9 +4,9 @@ runme:
   version: v2.2
 ---
 
-### 📝 Bug Report
+### <img align="center" width="20" alt="Shimarin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXeGR2RyhCZtjyQ0AnrgaHH-QRE2rnfiJOw&usqp=CAU"/>  Bug Report
 
-|  [Nombre del Proyecto]       | <img src="../images/logo.png" alt="Icono de éxito" width="100"/>  |
+| **Proyecto:**                | [Nombre del proyecto] |
 |------------------------------|----------------------------------------------|
 | **Id:**                      | [Identificador del caso de prueba]           |
 | **Día del Reporte:**         | [Fecha del reporte]                          |
@@ -15,7 +15,7 @@ runme:
 | **Prioridad:**               | [Alta/Media/Baja]                            |
 | **Asignado a:**              | FrontEnd-Backend-Diseño                      |
 
-## Pasos de Reproduccion
+## `Pasos de Reproduccion`
 
 Pre-requisitos: n/a
 
@@ -23,14 +23,14 @@ Pre-requisitos: n/a
 2. [Segundo paso]
 3. [...]
 
-## Resultado Esperado
+## `Resultado Esperado`
 
 [ descripcion del resultado esperado ]
 
-## Resultado Obtenido
+## `Resultado Obtenido`
 
 [ descripcion del resultado obtenido ]
 
-## Capturas de Pantalla
+## `Capturas de Pantalla`
 
 [ agregar adjuntos de imagen o video]
