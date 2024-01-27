@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HN3MNZ3YZDW9WSRSHS5VS0ME
-  version: v2.2
----
-
 ### <img align="center" width="30" alt="no-country" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXeGR2RyhCZtjyQ0AnrgaHH-QRE2rnfiJOw&usqp=CAU"/> **_Bug Report_**
 
 | **Proyecto:**                | [Nombre del proyecto] |
@@ -35,6 +29,3 @@ Pre-requisitos: n/a
 
 [ agregar adjuntos de imagen o video]
 
-<div align="right">
-
-</div>
