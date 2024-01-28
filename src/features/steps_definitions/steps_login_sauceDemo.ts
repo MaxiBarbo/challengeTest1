@@ -12,7 +12,7 @@ const escenario1 = '@agregar-producto'
 const escenario2 = '@eliminar-producto'
 
 Before( { timeout: 10000 }, async () => {
-    browser = await firefox.launch({ headless: false });
+    browser = await firefox.launch({ headless: true });
     page = await browser.newPage();
     elements = new Elements(page)
 });

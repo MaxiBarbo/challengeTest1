@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2013191500
+              "duration": 1628131100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1005235900
+              "duration": 1237360999
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2056503499
+              "duration": 2060034200
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1717999
+              "duration": 37961300
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1717400
+              "duration": 729000
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1911105300
+              "duration": 1913831100
             }
           }
         ],
@@ -87,6 +87,6 @@
     "keyword": "Feature",
     "name": "Visual Testing en la Home Page de la Tienda",
     "tags": [],
-    "uri": "src\\features\\scenarios\\saucedemo\\data_sheets.feature"
+    "uri": "src\\features\\scenarios\\data_sheets.feature"
   }
 ]

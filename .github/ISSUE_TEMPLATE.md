@@ -16,7 +16,6 @@ runme:
 | **Tipo de Defecto:**         | Visual-Funcional-Contenido-Crash-Performance |
 | **Prioridad:**               | [Alta/Media/Baja]                            |
 | **Asignado a:**              | FrontEnd-Backend-Diseño                      |
-| **Test Plan :**              |                       |
 
 - ## `Pasos de Reproduccion`
 
@@ -38,3 +37,6 @@ Pre-requisitos: n/a
 
 [ agregar adjuntos de imagen o video]
 
+##
+
+> Tester QA: [nombre del tester]

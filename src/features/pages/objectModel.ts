@@ -50,6 +50,6 @@ export class Elements {
         let excelData = 'src/templates/dataLogin.xlsx'
         let dataExcel = accessExcelSheet(excelData)
 
-        console.log(dataExcel)
+        
     }
 }
