@@ -132,7 +132,7 @@ body:
   - type: textarea
     id: url
     attributes:
-      label: ✔️ URL
-      placeholder: nombre del tester
+      label: ✔️ Test Plan
+      placeholder: adjunta link del test plan
     validations:
       required: true
