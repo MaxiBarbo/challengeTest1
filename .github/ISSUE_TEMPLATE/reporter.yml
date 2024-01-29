@@ -10,7 +10,7 @@ body:
   - type: input
     id: id_number
     attributes:
-      label: 📗 ID
+      label: 1️⃣ ID
       placeholder: ingrese id del caso de prueba
     validations:
       required: true
@@ -18,7 +18,7 @@ body:
   - type: input
     id: fecha_reporte
     attributes:
-      label: Fecha de Reporte
+      label: 2️⃣ Fecha de Reporte
       description: Fecha en que se realiza el reporte del bug
       placeholder: "DD-MM-YY"
     validations:
