@@ -9,117 +9,56 @@ body:
   - type: markdown
     attributes:
       value: |
-
-  - type: text
-    id: bug-report-id
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
     attributes:
-      label: ID
-      description: 
-      placeholder: 
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
-
-  - type: date
-    id: bug-report-date
-    attributes:
-      label: Dia del Reporte
-      description: 
-      placeholder: Elegir Fecha
-    validations:
-      required: true
-
   - type: dropdown
-    id: dispositivo-navegador
+    id: version
     attributes:
-      label: Dispositivo / Navegador 
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
       multiple: true
       options:
-        - PC - Windows
-        - PC - Ubuntu
-        - Mobile - Android
-        - Mobile - IOS
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
-
-  - type: dropdown
-    id: tipo-de-defecto
+  - type: textarea
+    id: logs
     attributes:
-      label: Tipo de defecto
-      description: 
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
-        - Visual
-        - Funcional
-        - Contenido
-        - Crash
-        - Performance
-      default: 0
-    validations:
-      required: true
-
-  - type: dropdown
-    id: prioridad
-    attributes:
-      label: Prioridad
-      description: 
-      options:
-        - Baja
-        - Media
-        - Alta
-      default: 0
-    validations:
-      required: true
-
-  - type: dropdown
-    id: asignado-a
-    attributes:
-      label: Asignado a
-      description: 
-      options:
-        - Visual
-        - Funcional
-        - Contenido
-        - Crash
-        - Performance
-      default: 0
-    validations:
-      required: true
-
-  - type: textarea
-    id: pasos-de-reproduccion
-    attributes:
-      label: Pasos de Reproduccion
-      description: si se requieren pre-requisitos agregarlos antes de los pasos de reproduccion 
-      placeholder: |
-        Pre-requisitos: N/A
-        1. Ingresar URL:
-        2. Segundo paso:
-        3. [...]
-
-  - type: textarea
-    id: resultado-esperado
-    attributes:
-      label: Resultado Esperado
-      description: Describir el resultado esperado
-
-  - type: textarea
-    id: resultado-obtenido
-    attributes:
-      label: Resultado Obtenido
-      description: Describir el resultado obtenido
-
-  - type: textarea
-    id: capturas-de-pantalla
-    attributes:
-      label: Screenshots or Videos
-      description: Adjuntar capturas de pantalla o videos relevantes.
-
-  - type: input
-    id: tester-qa
-    attributes:
-      label: Tester QA
-      description: 
-      placeholder: Nombre del tester
-    validations:
-      required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true
