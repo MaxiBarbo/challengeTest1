@@ -121,18 +121,18 @@ body:
       label: ✔️ Imagenes y/o Videos
       description: Adjuntar archivos de tipo imagen y/o video
 
-  - type: input
-    id: tester_qa
-    attributes:
-      label: ✔️ Tester QA
-      placeholder: nombre del tester
-    validations:
-      required: true
-
   - type: textarea
     id: url
     attributes:
       label: ✔️ Test Plan
       placeholder: adjunta link del test plan
+    validations:
+      required: true
+
+  - type: input
+    id: tester_qa
+    attributes:
+      label: ✔️ Tester QA
+      placeholder: nombre del tester
     validations:
       required: true
