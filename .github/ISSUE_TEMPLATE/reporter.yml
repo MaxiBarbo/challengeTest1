@@ -128,7 +128,7 @@ body:
     validations:
       required: true
 
-- type: url
+- type: textarea
   id: enlace_externo
   attributes:
     label: ✔️ Test Plan
