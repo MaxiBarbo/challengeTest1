@@ -121,20 +121,20 @@ body:
       label: ✔️ Imagenes y/o Videos
       description: Adjuntar archivos de tipo imagen y/o video
 
-  - type: input
+- type: input
+    id: url
+    attributes:
+      label: Test Plan
+      description: Ingresar direccion url
+      placeholder: email@example.com
+
+- type: input
     id: tester_qa
     attributes:
       label: ✔️ Tester QA
       placeholder: nombre del tester
     validations:
       required: true
-
-  - type: textarea
-    id: url
-    attributes:
-      label: Test Plan
-      description: Ingresar direccion de url 
-      render: shell     
 
   # - type: markdown
   #   attributes:
