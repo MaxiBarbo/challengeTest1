@@ -14,6 +14,15 @@ body:
       placeholder: ingrese id del caso de prueba
     validations:
       required: true
+
+  - type: input
+    id: fecha_reporte
+    attributes:
+      label: Fecha de Reporte
+      description: Fecha en que se realiza el reporte del bug
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
       
   - type: dropdown
     id: version
