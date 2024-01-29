@@ -10,7 +10,7 @@ body:
   - type: input
     id: id_number
     attributes:
-      label: * ID
+      label: 📗 ID
       placeholder: ingrese id del caso de prueba
     validations:
       required: true
