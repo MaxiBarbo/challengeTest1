@@ -14,16 +14,7 @@ body:
       placeholder: ingrese id del caso de prueba
     validations:
       required: true
-
-- type: date
-    id: fecha_reporte
-    attributes:
-      label: Fecha de Reporte
-      description: Fecha en que se realiza el reporte del bug
-      default: today
-    validations:
-      required: true
-
+      
   - type: dropdown
     id: version
     attributes:
