@@ -29,10 +29,6 @@ body:
       label: Dispositivo / Navegador
       multiple: true
       options:
-        - PC - Windows
-        - PC - Ubuntu
-        - Mobile - Android
-        - Mobile - IOS
         - Firefox
         - Chrome
         - Safari
