@@ -22,9 +22,13 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Dispositivo / Navegador
       multiple: true
       options:
+        - PC - Windows
+        - PC - Ubuntu
+        - Mobile - Android
+        - Mobile - IOS
         - Firefox
         - Chrome
         - Safari
