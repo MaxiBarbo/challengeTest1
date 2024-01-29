@@ -12,9 +12,9 @@ body:
 
 
   - type: dropdown
-    id: Tipo de defecto
+    id: Tipo 
     attributes:
-      label: Tipo de Defecto
+      label: Tipo 
       description: 
       options:
         - Funcional
@@ -27,9 +27,9 @@ body:
       required: true
 
   - type: dropdown
-    id: Dispositivos / Navegador
+    id: Dispositivos 
     attributes:
-      label: Dispositivo / Navegador
+      label: Dispositivo 
       multiple: true
       options:
         - Firefox
