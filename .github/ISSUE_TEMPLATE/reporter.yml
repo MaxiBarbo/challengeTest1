@@ -8,7 +8,7 @@ assignees:
 body:
 
   - type: input
-    id: tester_qa
+    id: id_number
     attributes:
       label: ID
       placeholder: ingrese id del caso de prueba
