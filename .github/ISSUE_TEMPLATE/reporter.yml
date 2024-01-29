@@ -15,15 +15,6 @@ body:
     validations:
       required: true
 
-  - type: date
-    id: bug-report-date
-    attributes:
-      label: Dia del Reporte
-      description: 
-      placeholder: Elegir Fecha
-    validations:
-      required: true
-
   - type: dropdown
     id: version
     attributes:
