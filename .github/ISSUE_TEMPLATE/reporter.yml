@@ -128,26 +128,10 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      label: Test Plan
-      description: [Test Plan](https://www.notion.so/maxi-barbosa-proyects/Test-Plan-1-4035ba912dc64a959f4d4d8f5d1d1d2e)
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- type: url
+  id: enlace_externo
+  attributes:
+    label: ✔️ Test Plan
+    placeholder: Ingrese un enlace externo
+  validations:
+    required: false
