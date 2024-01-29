@@ -1,7 +1,8 @@
 name: Bug Report
+description: 
 title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
+labels: 
+projects: 
 assignees:
   - octocat
 body:
