@@ -49,7 +49,7 @@ body:
         - Safari
         - Microsoft Edge
 
-    - type: dropdown
+  - type: dropdown
     id: asignado-a
     attributes:
       label: Asignado a
