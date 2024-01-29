@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+
 
   - type: dropdown
     id: version
@@ -26,7 +26,7 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Dispositivo / Navegador
       multiple: true
       options:
         - Firefox
