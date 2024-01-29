@@ -20,7 +20,7 @@ body:
     attributes:
       label: Fecha de Reporte
       description: Fecha en que se realiza el reporte del bug
-      placeholder: "YYYY-MM-DD"
+      placeholder: "DD-MM-YY"
     validations:
       required: true
       
