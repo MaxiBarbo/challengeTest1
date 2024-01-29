@@ -121,11 +121,6 @@ body:
       label: ✔️ Imagenes y/o Videos
       description: Adjuntar archivos de tipo imagen y/o video
 
-  - type: markdown
-    attributes:
-      value: |
-        [Test Plan - No country](https://www.notion.so/maxi-barbosa-proyects/Test-Plan-1-4035ba912dc64a959f4d4d8f5d1d1d2e)
-
   - type: input
     id: tester_qa
     attributes:
@@ -134,3 +129,7 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        [Test Plan - No country](https://www.notion.so/maxi-barbosa-proyects/Test-Plan-1-4035ba912dc64a959f4d4d8f5d1d1d2e)
