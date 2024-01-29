@@ -9,12 +9,12 @@ body:
   - type: markdown
     attributes:
       value: |
-
+        Thanks for taking the time to fill out this bug report!
 
   - type: dropdown
-    id: Tipo 
+    id: Tipo de defecto
     attributes:
-      label: Tipo 
+      label: Tipo de Defecto
       description: 
       options:
         - Funcional
@@ -27,9 +27,9 @@ body:
       required: true
 
   - type: dropdown
-    id: Dispositivos 
+    id: browsers
     attributes:
-      label: Dispositivo 
+      label: What browsers are you seeing the problem on?
       multiple: true
       options:
         - Firefox
