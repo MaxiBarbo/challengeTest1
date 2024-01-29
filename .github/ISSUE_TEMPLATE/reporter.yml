@@ -1,4 +1,5 @@
 name: Bug Report
+description: Complete todos los campos con * para realizar el reporte de bug
 title: "[Bug]: "
 labels: ["bug", "triage"]
 projects: ["octo-org/1", "octo-org/44"]
