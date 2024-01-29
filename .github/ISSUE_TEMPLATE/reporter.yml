@@ -129,8 +129,8 @@ body:
     validations:
       required: true
 
-  - type: url
-    id: tester_qa
+  - type: textarea
+    id: url
     attributes:
       label: ✔️ URL
       placeholder: nombre del tester
