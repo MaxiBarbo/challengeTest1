@@ -102,24 +102,32 @@ body:
         1. Ingresar URL:
         2. Segundo paso:
         3. [...]
+    validations:
+      required: true        
 
   - type: textarea
     id: resultado_esperado
     attributes:
       label: ✔️ Resultado Esperado
       description: Describa exactamente el resuldato esperado
+    validations:
+      required: true      
 
   - type: textarea
     id: resultado_obtenido
     attributes:
       label: ✔️ Resultado Obtenido
-      description: Describa exactamente el resultado obtenido 
+      description: Describa exactamente el resultado obtenido
+    validations:
+      required: true       
 
   - type: textarea
     id: capturas_de_pantalla
     attributes:
       label: ✔️ Imagenes y/o Videos
       description: Adjuntar archivos de tipo imagen y/o video
+    validations:
+      required: true
 
   - type: input
     id: tester_qa
