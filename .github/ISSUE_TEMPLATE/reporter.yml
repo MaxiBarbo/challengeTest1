@@ -9,56 +9,89 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
 
-  - type: input
-    id: contact
+  - type: text
+    id: bug-report-id
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: ID
+      description: 
+      placeholder: 
     validations:
-      required: false
+      required: true
 
-  - type: textarea
-    id: what-happened
+  - type: date
+    id: bug-report-date
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Dia del Reporte
+      description: 
+      placeholder: Elegir Fecha
     validations:
       required: true
 
   - type: dropdown
-    id: version
+    id: Dispositivo / Navegador
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
+      label: Dispositivo / Navegador 
       multiple: true
       options:
+        - PC - Windows
+        - PC - Ubuntu
+        - Mobile - Andorid
+        - Mobile - IOS
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
 
-  - type: textarea
-    id: logs
+  - type: dropdown
+    id: Tipo de Defecto
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Tipo de defecto
+      description: 
+      options:
+        - Visual
+        - Funcional
+        - Contendio
+        - Crash
+        - Performance
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: Prioridad
+    attributes:
+      label: Prioridad
+      description: 
+      options:
+        - Baja
+        - Media
+        - Alta
+      default: 0
+    validations:
+      required: true
+
+        - type: dropdown
+    id: Asignado a
+    attributes:
+      label: Asignado a
+      description: 
+      options:
+        - Visual
+        - Funcional
+        - Contendio
+        - Crash
+        - Performance
+      default: 0
+    validations:
+      required: true
+
+  # - type: textarea
+  #   id: logs
+  #   attributes:
+  #     label: Relevant log output
+  #     description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+  #     render: shell
 
   - type: checkboxes
     id: terms
@@ -72,9 +105,10 @@ body:
   - type: textarea
     id: pasos_de_reproduccion
     attributes:
-      label: Steps to Reproduce
-      description: Please provide detailed steps to reproduce the issue.
+      label: Pasos de Reproduccion
+      description: si se requieren pre-requisitos agregarlos antes de los pasos de reproduccion 
       placeholder: |
+      Pre-requisitos: N/A
         1. Ingresar URL:
         2. Segundo paso:
         3. [...]
@@ -82,14 +116,14 @@ body:
   - type: textarea
     id: resultado_esperado
     attributes:
-      label: Expected Result
-      description: Describe what you expected to happen.
+      label: Resultado Esperado
+      description: Describir el resultado esperado
 
   - type: textarea
     id: resultado_obtenido
     attributes:
-      label: Actual Result
-      description: Describe what actually happened.
+      label: Resultado Obtenido
+      description: Describir el reusltado obtenido
 
   - type: textarea
     id: capturas_de_pantalla
@@ -100,8 +134,8 @@ body:
   - type: input
     id: tester_qa
     attributes:
-      label: QA Tester
-      description: Name of the QA Tester who reported the bug.
-      placeholder: Tester's name
+      label: Tester QA
+      description: 
+      placeholder: Nombre del tester
     validations:
       required: true
