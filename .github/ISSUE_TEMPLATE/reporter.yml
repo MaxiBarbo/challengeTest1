@@ -6,9 +6,7 @@ projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - octocat
 body:
-  - type: markdown
-    attributes:
-        
+
   - type: dropdown
     id: version
     attributes:
