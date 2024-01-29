@@ -144,7 +144,7 @@ body:
       label: ⚙️ Tester QA
       placeholder: nombre del tester
     validations:
-      required: true
+      required: false
 
   # - type: markdown
   #   attributes:
