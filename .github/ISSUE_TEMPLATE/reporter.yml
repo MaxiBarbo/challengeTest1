@@ -9,24 +9,27 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+
 
   - type: dropdown
-    id: version
+    id: Tipo de defecto
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Tipo de Defecto
+      description: 
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Funcional
+        - Visual
+        - Performance
+        - Crash
+        - Contenido
       default: 0
     validations:
       required: true
 
   - type: dropdown
-    id: browsers
+    id: Dispositivos / Navegador
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Dispositivo / Navegador
       multiple: true
       options:
         - Firefox
