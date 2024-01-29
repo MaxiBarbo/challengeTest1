@@ -130,6 +130,15 @@ body:
       required: true
 
   - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+
+  - type: input
     id: tester_qa
     attributes:
       label: ✔️ Tester QA
@@ -137,7 +146,7 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        [Test Plan - No country](https://www.notion.so/maxi-barbosa-proyects/Test-Plan-1-4035ba912dc64a959f4d4d8f5d1d1d2e)
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       [Test Plan - No country](https://www.notion.so/maxi-barbosa-proyects/Test-Plan-1-4035ba912dc64a959f4d4d8f5d1d1d2e)
