@@ -7,6 +7,24 @@ assignees:
   - octocat
 body:
 
+  - type: text
+    id: bug-report-id
+    attributes:
+      label: ID
+      description: 
+      placeholder: 
+    validations:
+      required: true
+
+  - type: date
+    id: bug-report-date
+    attributes:
+      label: Dia del Reporte
+      description: 
+      placeholder: Elegir Fecha
+    validations:
+      required: true
+
   - type: dropdown
     id: version
     attributes:
@@ -50,11 +68,12 @@ body:
         - Microsoft Edge
 
   - type: textarea
-    id: pasos_de_reproduccion
+    id: pasos-de-reproduccion
     attributes:
-      label: Steps to Reproduce
-      description: Please provide detailed steps to reproduce the issue.
+      label: Pasos de Reproduccion
+      description: si se requieren pre-requisitos agregarlos antes de los pasos de reproduccion 
       placeholder: |
+        Pre-requisitos: N/A
         1. Ingresar URL:
         2. Segundo paso:
         3. [...]
