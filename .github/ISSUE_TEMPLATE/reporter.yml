@@ -121,15 +121,15 @@ body:
       label: ✔️ Imagenes y/o Videos
       description: Adjuntar archivos de tipo imagen y/o video
 
-  - type: textarea
-    id: url
+  - type: input
+    id: tester_qa
     attributes:
-      label: ✔️ Test Plan
-      placeholder: adjuntar link del test plan
+      label: ✔️ Tester QA
+      placeholder: nombre del tester
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        > [Test Plan - team x](https://www.notion.so/maxi-barbosa-proyects/Test-Plan-1-4035ba912dc64a959f4d4d8f5d1d1d2e)
+        > [Plan de Pruebas - team x](https://www.notion.so/maxi-barbosa-proyects/Test-Plan-1-4035ba912dc64a959f4d4d8f5d1d1d2e)
