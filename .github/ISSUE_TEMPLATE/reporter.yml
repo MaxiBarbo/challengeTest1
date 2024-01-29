@@ -36,7 +36,7 @@ body:
       options:
         - PC - Windows
         - PC - Ubuntu
-        - Mobile - Andorid
+        - Mobile - Android
         - Mobile - IOS
         - Firefox
         - Chrome
@@ -51,7 +51,7 @@ body:
       options:
         - Visual
         - Funcional
-        - Contendio
+        - Contenido
         - Crash
         - Performance
       default: 0
@@ -79,7 +79,7 @@ body:
       options:
         - Visual
         - Funcional
-        - Contendio
+        - Contenido
         - Crash
         - Performance
       default: 0
@@ -107,13 +107,13 @@ body:
     id: resultado-obtenido
     attributes:
       label: Resultado Obtenido
-      description: Describir el reusltado obtenido
+      description: Describir el resultado obtenido
 
   - type: textarea
     id: capturas-de-pantalla
     attributes:
       label: Screenshots or Videos
-      description: Attach any relevant screenshots or videos.
+      description: Adjuntar capturas de pantalla o videos relevantes.
 
   - type: input
     id: tester-qa
