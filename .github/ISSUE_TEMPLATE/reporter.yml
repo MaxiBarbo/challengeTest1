@@ -12,16 +12,13 @@ body:
         Thanks for taking the time to fill out this bug report!
 
   - type: dropdown
-    id: Tipo de defecto
+    id: version
     attributes:
-      label: Tipo de Defecto
-      description: 
+      label: Version
+      description: What version of our software are you running?
       options:
-        - Funcional
-        - Visual
-        - Performance
-        - Crash
-        - Contenido
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
       default: 0
     validations:
       required: true
