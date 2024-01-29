@@ -9,17 +9,18 @@ body:
   - type: markdown
     attributes:
       value: |
-        
+        Thanks for taking the time to fill out this bug report!
 
   - type: dropdown
-    id: tipo_defecto
+    id: version
     attributes:
-      label: Tipo de Defecto
-      description: 
+      label: Version
+      description: What version of our software are you running?
       options:
         - Funcional
         - Visual
         - Crash
+        - Performance
     validations:
       required: true
 
