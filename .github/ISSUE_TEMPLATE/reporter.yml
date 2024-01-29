@@ -11,20 +11,20 @@ body:
       value: |
         
 
-  - type: dropdown
-    id: TIpo de Defecto
-    attributes:
-      label: Tipo de Defecto
-      description: 
-      options:
-        - Funcional
-        - Visual
-        - Performance
-        - Crash
-        - Contenido
-      default: 0
-    validations:
-      required: true
+  # - type: dropdown
+  #   id: TIpo de Defecto
+  #   attributes:
+  #     label: Tipo de Defecto
+  #     description: 
+  #     options:
+  #       - Funcional
+  #       - Visual
+  #       - Performance
+  #       - Crash
+  #       - Contenido
+  #     default: 0
+  #   validations:
+  #     required: true
 
   - type: dropdown
     id: browsers
