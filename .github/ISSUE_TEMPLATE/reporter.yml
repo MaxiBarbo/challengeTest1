@@ -1,7 +1,8 @@
 name: Bug Report
 description: Complete todos los campos con * para realizar el reporte de bug
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: 
+  - Bug
 projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - octocat
