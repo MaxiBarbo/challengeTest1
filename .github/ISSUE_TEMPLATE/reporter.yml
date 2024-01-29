@@ -29,7 +29,7 @@ body:
       required: true
 
   - type: dropdown
-    id: Dispositivo / Navegador
+    id: dispositivo-navegador
     attributes:
       label: Dispositivo / Navegador 
       multiple: true
@@ -44,7 +44,7 @@ body:
         - Microsoft Edge
 
   - type: dropdown
-    id: Tipo de Defecto
+    id: tipo-de-defecto
     attributes:
       label: Tipo de defecto
       description: 
@@ -59,7 +59,7 @@ body:
       required: true
 
   - type: dropdown
-    id: Prioridad
+    id: prioridad
     attributes:
       label: Prioridad
       description: 
@@ -71,8 +71,8 @@ body:
     validations:
       required: true
 
-        - type: dropdown
-    id: Asignado a
+  - type: dropdown
+    id: asignado-a
     attributes:
       label: Asignado a
       description: 
@@ -86,53 +86,37 @@ body:
     validations:
       required: true
 
-  # - type: textarea
-  #   id: logs
-  #   attributes:
-  #     label: Relevant log output
-  #     description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-  #     render: shell
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
-
   - type: textarea
-    id: pasos_de_reproduccion
+    id: pasos-de-reproduccion
     attributes:
       label: Pasos de Reproduccion
       description: si se requieren pre-requisitos agregarlos antes de los pasos de reproduccion 
       placeholder: |
-      Pre-requisitos: N/A
+        Pre-requisitos: N/A
         1. Ingresar URL:
         2. Segundo paso:
         3. [...]
 
   - type: textarea
-    id: resultado_esperado
+    id: resultado-esperado
     attributes:
       label: Resultado Esperado
       description: Describir el resultado esperado
 
   - type: textarea
-    id: resultado_obtenido
+    id: resultado-obtenido
     attributes:
       label: Resultado Obtenido
       description: Describir el reusltado obtenido
 
   - type: textarea
-    id: capturas_de_pantalla
+    id: capturas-de-pantalla
     attributes:
       label: Screenshots or Videos
       description: Attach any relevant screenshots or videos.
 
   - type: input
-    id: tester_qa
+    id: tester-qa
     attributes:
       label: Tester QA
       description: 
