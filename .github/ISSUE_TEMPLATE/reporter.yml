@@ -1,4 +1,4 @@
-name: Bug Report2
+name: Bug Report
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-
+        Thanks for taking the time to fill out this bug report!
   - type: input
     id: contact
     attributes:
@@ -18,7 +18,6 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-
   - type: textarea
     id: what-happened
     attributes:
@@ -28,7 +27,6 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-
   - type: dropdown
     id: version
     attributes:
@@ -40,7 +38,6 @@ body:
       default: 0
     validations:
       required: true
-
   - type: dropdown
     id: browsers
     attributes:
@@ -51,14 +48,12 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
-
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-
   - type: checkboxes
     id: terms
     attributes:
@@ -67,112 +62,3 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
-
-  - type: text
-    id: bug-report-id
-    attributes:
-      label: ID
-      description: 
-      placeholder: 
-    validations:
-      required: true
-
-  - type: date
-    id: bug-report-date
-    attributes:
-      label: Dia del Reporte
-      description: 
-      placeholder: Elegir Fecha
-    validations:
-      required: true
-
-  - type: dropdown
-    id: dispositivo-navegador
-    attributes:
-      label: Dispositivo / Navegador 
-      multiple: true
-      options:
-        - Ubuntu
-        - Windows
-        - Chrome
-        - Firefox
-        - Edge
-
-  - type: dropdown
-    id: tipo-de-defecto
-    attributes:
-      label: Tipo de defecto
-      description: 
-      options:
-        - Visual
-        - Funcional
-        - Contenido
-        - Crash
-        - Performance
-      default: 0
-    validations:
-      required: true
-
-  - type: dropdown
-    id: prioridad
-    attributes:
-      label: Prioridad
-      description: 
-      options:
-        - Alta
-        - Media
-        - Baja
-      default: 0
-    validations:
-      required: true
-
-  - type: dropdown
-    id: asignado-a
-    attributes:
-      label: Asignado a
-      description: 
-      options:
-        - FrontEnd
-        - Backend
-        - Diseño
-      default: 0
-    validations:
-      required: true
-
-  - type: textarea
-    id: pasos-de-reproduccion
-    attributes:
-      label: Pasos de Reproduccion
-      description: si se requieren pre-requisitos agregarlos antes de los pasos de reproduccion 
-      placeholder: |
-        Pre-requisitos: n/a
-        1. Ingresar URL:
-        2. Segundo paso:
-        3. [...]
-
-  - type: textarea
-    id: resultado-esperado
-    attributes:
-      label: Resultado Esperado
-      description: Describir el resultado esperado
-
-  - type: textarea
-    id: resultado-obtenido
-    attributes:
-      label: Resultado Obtenido
-      description: Describir el reusltado obtenido
-
-  - type: textarea
-    id: capturas-de-pantalla
-    attributes:
-      label: Screenshots or Videos
-      description: Adjuntar capturas de pantalla o videos relevantes.
-
-  - type: input
-    id: tester-qa
-    attributes:
-      label: Tester QA
-      description: 
-      placeholder: Nombre del tester
-    validations:
-      required: true
