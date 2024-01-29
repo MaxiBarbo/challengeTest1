@@ -130,22 +130,21 @@ body:
       required: true
 
   - type: input
+    id: url
+    attributes:
+      label: ✔️ Test plan
+      description: Ingresar url 
+      placeholder: email@example.com
+    validations:
+      required: false
+
+  - type: input
     id: tester_qa
     attributes:
       label: ✔️ Tester QA
       placeholder: nombre del tester
     validations:
       required: true
-
-  - type: input
-    id: contact
-    attributes:
-      label: Test plan
-      description: Ingresar url 
-      placeholder: email@example.com
-    validations:
-      required: false
-
 
   # - type: markdown
   #   attributes:
