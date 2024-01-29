@@ -42,20 +42,32 @@ body:
       required: true
 
   - type: dropdown
-    id: browsers
+    id: Dispositivo
     attributes:
-      label: Dispositivo / Navegador
-      description: Elegir disposito y navegador
-      multiple: true
+      label: Dispositivo
+      description: 
       options:
-        - PC - Windows
+        - PC - Windows 
         - PC - Ubuntu
-        - Mobile - Android
+        - Mobile - Andorid
         - Mobile - IOS
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: Navegador
+    attributes:
+      label: Navegador
+      description: 
+      options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
+      default: 0
+    validations:
+      required: true
 
   - type: dropdown
     id: asignado-a
