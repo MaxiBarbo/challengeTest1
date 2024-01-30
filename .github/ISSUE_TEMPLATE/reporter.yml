@@ -1,5 +1,5 @@
-name: Bug Report
-description: Complete todos los campos con * para realizar el reporte de bug
+name: Reporte de Bug
+description: template para crear un reporte de bug en issues de github
 title: "[Ingresar título del Bug]"
 labels: 
   - Bug
