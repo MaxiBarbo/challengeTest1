@@ -1,0 +1,16 @@
+name: Branch Created
+
+on:
+  create:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Notify on Branch Creation
+      run: |
+        echo "Se ha creado una nueva rama: ${{ github.event.ref }}"
