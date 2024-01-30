@@ -1,0 +1,19 @@
+name: Issue Created
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Notify on Issue Creation
+      run: |
+        echo "Se ha creado una nueva issue: ${{ github.event.issue.title }}"
+
