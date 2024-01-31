@@ -2,7 +2,7 @@
 
 ## `Información del Proyecto`
 
-| Empresa / Organización | No Country |
+| Team | Sxx-xx-xxxx |
 | --- | --- |
 | Proyecto | [Nombre del Proyecto] |
 | Fecha de preparación | [Fecha] |
