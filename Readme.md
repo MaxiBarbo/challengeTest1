@@ -19,16 +19,40 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ## `Tipos de Pruebas, Estrategia`
 
-### <u>Pruebas Funcionales</u>
-- **Smoke Test:** Pruebas iniciales para asegurar que las funciones principales del software estén operativas.
-- **Pruebas Exploratorias:** Evaluación adicional basada en los requerimientos para descubrir posibles problemas y áreas de mejora.
+<details>
+<br>
+  <summary><b>Pruebas Funcionales</b></summary>
 
-### <u>Pruebas No Funcionales</u>
-- **Pruebas de Usabilidad:** Evaluación de la facilidad de uso y la experiencia del usuario.
-- **Pruebas de Seguridad:** Enfoque en la autenticación y autorización para garantizar la protección de datos y la integridad del sistema.
+  - **Smoke Test:**
+    Pruebas iniciales para asegurar que las funciones principales del software estén operativas.
 
-### <u>Pruebas Automatizadas</u>
-- **Pruebas E2E (End-to-End):** Automatización de pruebas que cubren todo el flujo del sistema, desde el inicio hasta la finalización.
+  - **Pruebas Exploratorias:**
+    Evaluación adicional basada en los requerimientos para descubrir posibles problemas y áreas de mejora.
+</details>
+
+<br>
+
+<details>
+<br>
+  <summary><b>Pruebas No Funcionales</b></summary>
+
+  - **Pruebas de Usabilidad:**
+    Evaluación de la facilidad de uso y la experiencia del usuario.
+
+  - **Pruebas de Seguridad:**
+    Enfoque en la autenticación y autorización para garantizar la protección de datos y la integridad del sistema.
+</details>
+
+<br>
+
+<details>
+<br>
+  <summary><b>Pruebas Automatizadas</b></summary>
+
+  - **Pruebas E2E (End-to-End):**
+    Automatización de pruebas que cubren todo el flujo del sistema, desde el inicio hasta la finalización.
+</details>
+
 
 ## `Herramientas de Pruebas`
 
@@ -51,7 +75,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ### <u>Escenarios BDD en Gherkin</u>
 
-- [Proyecto en GitHub](https://github.com/users/MaxiBarbo/projects/4)
+- [Proyecto creado en GitHub](https://github.com/users/MaxiBarbo/projects/4)
 
 ### <u>Testing APIs</u>
 
@@ -59,7 +83,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ### <u>Reporte de Bugs encontrados</u>
 
-- [Proyecto en GitHub](https://github.com/users/MaxiBarbo/projects/6)
+- [Proyecto creado en GitHub](https://github.com/users/MaxiBarbo/projects/6)
 
 ### <u>Testing Manual, Métricas y Estimaciones</u>
 
