@@ -20,7 +20,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 ## `Tipos de Pruebas, Estrategia`
 
 <details>
-<br>
+
   <summary><b>Pruebas Funcionales</b></summary>
 
   - **Smoke Test:**
@@ -30,10 +30,8 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
     Evaluación adicional basada en los requerimientos para descubrir posibles problemas y áreas de mejora.
 </details>
 
-<br>
-
 <details>
-<br>
+
   <summary><b>Pruebas No Funcionales</b></summary>
 
   - **Pruebas de Usabilidad:**
@@ -43,10 +41,8 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
     Enfoque en la autenticación y autorización para garantizar la protección de datos y la integridad del sistema.
 </details>
 
-<br>
-
 <details>
-<br>
+
   <summary><b>Pruebas Automatizadas</b></summary>
 
   - **Pruebas E2E (End-to-End):**
