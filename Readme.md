@@ -6,9 +6,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ## `Requerimientos`
 
-- [Documento de Requerimientos](./docs/documentoRQ.md)
-
-- [Checklist de Pruebas generales](https://www.notion.so/Checklist-de-Pruebas-generales-34209a40214a4c7da21e15fe33b803c8?pvs=21)
+- [Documentacion](./docs/documentoRQ.md)
 
 ## `Alcance de las Pruebas`
 
@@ -69,9 +67,9 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ## `Ejecución de Pruebas`
 
-### <u>Escenarios BDD en Gherkin</u>
+### <u>Escenarios BDD</u>
 
-- [Proyecto creado en GitHub](https://github.com/users/MaxiBarbo/projects/4)
+- [Proyecto de Github con escenarios de pruebas en Gherkin](https://github.com/users/MaxiBarbo/projects/4)
 
 ### <u>Testing APIs</u>
 
@@ -79,7 +77,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ### <u>Reporte de Bugs encontrados</u>
 
-- [Proyecto creado en GitHub](https://github.com/users/MaxiBarbo/projects/6)
+- [Proyecto de GitHub con lista de reporte de Bugs encontrados](https://github.com/users/MaxiBarbo/projects/6)
 
 ### <u>Testing Manual, Métricas y Estimaciones</u>
 
