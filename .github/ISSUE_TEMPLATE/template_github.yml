@@ -1,4 +1,4 @@
-name: Template github
+name: Template generico de github
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
