@@ -6,7 +6,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ## `Requerimientos`
 
-- [Documento de Requerimientos](https://www.notion.so/Documento-de-Requerimientos-ef6ca8f3f011478ab9832dd54b6096f7?pvs=21)
+- [Documento de Requerimientos](./docs/documentoRQ.md)
 
 - [Checklist de Pruebas generales](https://www.notion.so/Checklist-de-Pruebas-generales-34209a40214a4c7da21e15fe33b803c8?pvs=21)
 
