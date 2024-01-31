@@ -2,11 +2,11 @@
 
 ## `Información del Proyecto`
 
-| Empresa / Organización | [Nombre de la Empresa] |
+| Empresa / Organización | No Country |
 | --- | --- |
 | Proyecto | [Nombre del Proyecto] |
 | Fecha de preparación | [Fecha] |
-| Cliente | [Nombre del Cliente] |
+| Cliente | No Country |
 
 ## `Requerimientos`
 
