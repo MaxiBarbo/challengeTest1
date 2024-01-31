@@ -15,27 +15,22 @@
 <details>
 <summary>Frontend</summary>
 
-- [ ] Requerimiento 1
-- [ ] Requerimiento 2
-- [ ] ...
+-  Requerimiento 1
+-  Requerimiento 2
+-  ...
 
 </details>
 
 <details>
 <summary>Backend</summary>
 
-- [ ] Requerimiento 1
-- [ ] Requerimiento 2
-- [ ] ...
+- Requerimiento 1
+- Requerimiento 2
+- ...
 
 </details>
 
 ---
-
-> ## Propósito
-
-[Descripción breve del propósito del documento y del proyecto.]
-
 
 > ## Alcance del producto / software
 
@@ -49,19 +44,21 @@
 
 > ## Clases y Características de Usuarios
 
-### Usuarios Estándar
+<details>
+<summary>Usuarios Estándar</summary>
 
 - [Características y necesidades específicas]
 
-### Administradores
+</details>
+
+<details>
+
+<summary>Administradores</summary>
 
 - [Funciones y privilegios especiales]
 
-### Moderadores
+</details>
 
-- [Responsabilidades y privilegios específicos]
-
----
 
 > ## Reglas de Negocio
 
