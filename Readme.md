@@ -1,58 +1,69 @@
-# Proyecto de Pruebas con Cucumber
+# <img align="center" width="40" alt="no-country" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXeGR2RyhCZtjyQ0AnrgaHH-QRE2rnfiJOw&usqp=CAU"/> **_Test Plan_**
 
-Este proyecto utiliza Cucumber para escribir y ejecutar pruebas de aceptación en lenguaje natural. Las pruebas están escritas en Gherkin y se ejecutan utilizando el framework de Cucumber.
+## `Objetivo`
 
-## Requisitos Previos
+El plan de pruebas cubrirá las funcionalidades de la app según la lista de requerimientos en el backlog Frontend y Backend. Se realizaron escenarios de pruebas para optimizar su cobertura.
 
-tener instalado [Node.js](https://nodejs.org/)
+## `Requerimientos`
 
-## Configuración del Proyecto
+- [Documento de Requerimientos](https://www.notion.so/Documento-de-Requerimientos-ef6ca8f3f011478ab9832dd54b6096f7?pvs=21)
 
-1. Clona este repositorio a tu máquina local:
+- [Checklist de Pruebas generales](https://www.notion.so/Checklist-de-Pruebas-generales-34209a40214a4c7da21e15fe33b803c8?pvs=21)
 
-```bash {"id":"01HJ48GA59R8PQKAYGXTT6STSY"}
-git clone https://github.com/MaxiBarbo/challengeTest1.git
-```
+## `Alcance de las Pruebas`
 
-2. Navega al directorio del proyecto:
+- Registro de usuario
+- Login y Logout de usuario
+- Funcionalidad y Navegabilidad de la app
+- Pruebas de APIs
 
-```bash {"id":"01HJ48GA59R8PQKAYGXW2EWXWM"}
-cd AQA_TestTask/
-```
+## `Tipos de Pruebas, Estrategia`
 
-3. Instala las dependencias del proyecto:
+### <u>Pruebas Funcionales</u>
+- **Smoke Test:** Pruebas iniciales para asegurar que las funciones principales del software estén operativas.
+- **Pruebas Exploratorias:** Evaluación adicional basada en los requerimientos para descubrir posibles problemas y áreas de mejora.
 
-```bash {"id":"01HJ48GA59R8PQKAYGY007EZ03"}
-npm install
-```
+### <u>Pruebas No Funcionales</u>
+- **Pruebas de Usabilidad:** Evaluación de la facilidad de uso y la experiencia del usuario.
+- **Pruebas de Seguridad:** Enfoque en la autenticación y autorización para garantizar la protección de datos y la integridad del sistema.
 
-## Ejecución de las Pruebas
+### <u>Pruebas Automatizadas</u>
+- **Pruebas E2E (End-to-End):** Automatización de pruebas que cubren todo el flujo del sistema, desde el inicio hasta la finalización.
 
-Para ejecutar las pruebas, utiliza el siguiente comando:
+## `Herramientas de Pruebas`
 
-```bash {"id":"01HJ48GA59R8PQKAYGY0GMR826"}
-npm run test
-```
+- Playwright
+- Cucumber
+- Gherkin
+- Postman
+- Google Docs
+- GitHub Actions, Proyects, Issues y Milestones
+- Trello
+- Figma
 
-## Informe de ejecucion del Reporter
+## `Preparacion y Planificacion`
 
-Para ejecutar el reporter, utiliza el siguiente comando:
+- [Tablero de trabajo en Trello]()
 
-```bash {"id":"01HJ49KTH37EZRSEV75Q9KR6B2"}
-npm run reporter
-```
+- [Diseño en Figma]()
 
-## Estructura del Test
+## `Ejecución de Pruebas`
 
-> src /
+### <u>Escenarios BDD en Gherkin</u>
 
-- features: Contiene los archivos .feature que describen los escenarios de prueba en Gherkin.
-- helper: contiene un reporter.ts que se ejecuta luego de npm run test
-- step_definitions: Contiene las clases de definición de pasos de Cucumber.
-- reports: Contiene los informes de ejecución después de correr las pruebas.
+- [Proyecto en GitHub](https://github.com/users/MaxiBarbo/projects/4)
 
-## CI/CD con GitHub Actions
+### <u>Testing APIs</u>
 
-El test incluye automatización de CI/CD utilizando GitHub Actions. Los flujos de trabajo se definen en el directorio .github/workflows. El flujo de trabajo principal se encarga de ejecutar las pruebas cada vez que se realiza un push a la rama master.
+- [Postman]()
 
-> https://github.com/MaxiBarbo/challengeTest1/actions
+### <u>Reporte de Bugs encontrados</u>
+
+- [Proyecto en GitHub](https://github.com/users/MaxiBarbo/projects/6)
+
+### <u>Testing Manual, Métricas y Estimaciones</u>
+
+[Test Cases ejecutados - No-country cxx-xx-x-xx](https://docs.google.com/spreadsheets/d/1r32jKngM6Jw_gcJPxGlLL5ZANTZZQ5qWdl6VkUtg6ek/edit?usp=sharing)
+
+## `Repositorio del Proyecto`
+
