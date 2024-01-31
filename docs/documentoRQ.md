@@ -7,10 +7,8 @@
 | Proyecto | [Nombre del Proyecto] |
 | Fecha de preparación | [Fecha] |
 | Cliente | [Nombre del Cliente] |
-| Análisis de negocio y requerimientos | [Enlace al Documento de Análisis de Negocio y Requerimientos] |
 
-
-## `Requerimientos Funcionales`
+## `Requerimientos`
 
 <details>
 <summary>Frontend</summary>
