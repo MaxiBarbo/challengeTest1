@@ -1,6 +1,6 @@
-> # Documento de Requerimientos
+# `Documento de Requerimientos`
 
-> ## Información del Proyecto
+## `Información del Proyecto`
 
 | Empresa / Organización | [Nombre de la Empresa] |
 | --- | --- |
@@ -10,7 +10,7 @@
 | Análisis de negocio y requerimientos | [Enlace al Documento de Análisis de Negocio y Requerimientos] |
 
 
-> ## Requerimientos Funcionales
+## `Requerimientos Funcionales`
 
 <details>
 <summary>Frontend</summary>
@@ -32,17 +32,16 @@
 
 ---
 
-> ## Alcance del producto / software
+## `Alcance del producto / software`
 
 [Descripción de las funciones y características que se incluirán en el producto o software.]
 
-
-> ## Funcionalidades del producto
+## `Funcionalidades del producto`
 
 [Listado detallado de las principales funcionalidades que se espera que tenga el producto o software.]
 
 
-> ## Clases y Características de Usuarios
+## `Clases de Usuarios`
 
 <details>
 <summary>Usuarios Estándar</summary>
