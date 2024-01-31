@@ -34,11 +34,11 @@
 
 ## `Alcance del producto / software`
 
-[Descripción de las funciones y características que se incluirán en el producto o software.]
+- [Descripción de las funciones y características que se incluirán en el producto o software.]
 
 ## `Funcionalidades del producto`
 
-[Listado detallado de las principales funcionalidades que se espera que tenga el producto o software.]
+- [Listado detallado de las principales funcionalidades que se espera que tenga el producto o software.]
 
 
 ## `Clases de Usuarios`
@@ -61,5 +61,5 @@
 
 > ## Reglas de Negocio
 
-[Descripción de las reglas de negocio que deben considerarse en el desarrollo del proyecto.]
+- [Descripción de las reglas de negocio que deben considerarse en el desarrollo del proyecto.]
 
