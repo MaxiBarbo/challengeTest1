@@ -45,6 +45,9 @@
 <summary>Usuarios Estándar</summary>
 
 - [Características y necesidades específicas]
+    - Registro y acceso a la plataforma.
+    - Navegación por las funciones básicas.
+    - Interacción con contenido principal.
 
 </details>
 
@@ -53,6 +56,8 @@
 <summary>Administradores</summary>
 
 - [Funciones y privilegios especiales]
+    - Gestión de usuarios (creación, edición, eliminación).
+    - Acceso a paneles de administración.
 
 </details>
 
