@@ -79,7 +79,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ### <u>Reporte de Bugs encontrados</u>
 
-- [Proyecto en GitHub con lista de reporte de Bugs encontrados](https://github.com/users/MaxiBarbo/projects/6)
+- [Proyecto en GitHub con Bugs encontrados](https://github.com/users/MaxiBarbo/projects/6)
 
 ### <u>Testing Manual, Métricas y Estimaciones</u>
 
