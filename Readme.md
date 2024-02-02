@@ -71,7 +71,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ### <u>Escenarios BDD</u>
 
-- [Proyecto de Github con escenarios de pruebas en Gherkin](https://github.com/users/MaxiBarbo/projects/4)
+- [Proyecto en Github con escenarios de pruebas en Gherkin](https://github.com/users/MaxiBarbo/projects/4)
 
 ### <u>Testing APIs</u>
 
@@ -79,7 +79,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ### <u>Reporte de Bugs encontrados</u>
 
-- [Proyecto de GitHub con lista de reporte de Bugs encontrados](https://github.com/users/MaxiBarbo/projects/6)
+- [Proyecto en GitHub con lista de reporte de Bugs encontrados](https://github.com/users/MaxiBarbo/projects/6)
 
 ### <u>Testing Manual, Métricas y Estimaciones</u>
 
