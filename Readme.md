@@ -83,7 +83,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 ### <u>Testing Manual, Métricas y Estimaciones</u>
 
-[Test Cases ejecutados - No-country cxx-xx-x-xx](https://docs.google.com/spreadsheets/d/1r32jKngM6Jw_gcJPxGlLL5ZANTZZQ5qWdl6VkUtg6ek/edit?usp=sharing)
+[Test Cases ejecutados en Google Sheets - Team: s13-07-n-node-react](https://docs.google.com/spreadsheets/d/1r32jKngM6Jw_gcJPxGlLL5ZANTZZQ5qWdl6VkUtg6ek/edit?usp=sharing)
 
 ## `Repositorio del Proyecto`
 
