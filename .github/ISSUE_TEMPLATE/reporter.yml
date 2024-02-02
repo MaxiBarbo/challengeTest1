@@ -106,20 +106,21 @@ body:
       required: true        
 
   - type: textarea
-    id: resultado_esperado
-    attributes:
-      label: ✔️ Resultado Esperado
-      description: Describa exactamente el resuldato esperado
-    validations:
-      required: true      
-
-  - type: textarea
     id: resultado_obtenido
     attributes:
       label: ✔️ Resultado Obtenido
       description: Describa exactamente el resultado obtenido
     validations:
       required: true    
+
+
+  - type: textarea
+    id: resultado_esperado
+    attributes:
+      label: ✔️ Resultado Esperado
+      description: Describa exactamente el resuldato esperado
+    validations:
+      required: true      
 
   - type: textarea
     id: capturas_de_pantalla
