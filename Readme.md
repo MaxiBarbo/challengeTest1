@@ -63,7 +63,7 @@ El plan de pruebas cubrirá las funcionalidades de la app según la lista de req
 
 - [Tablero de trabajo en Trello]()
 
-- [Hitos / Milestones](https://github.com/MaxiBarbo/challengeTest1/milestones)
+- [Hitos / Milestones en GitHub](https://github.com/MaxiBarbo/challengeTest1/milestones)
 
 - [Diseño en Figma]()
 
