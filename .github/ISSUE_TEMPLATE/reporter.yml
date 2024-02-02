@@ -108,7 +108,7 @@ body:
   - type: textarea
     id: capturas_de_pantalla
     attributes:
-      label: ✔️ Imagenes y/o Videos
+      label: 📷 Imagenes y/o Videos
       description: Adjuntar archivos de tipo imagen y/o video
     validations:
       required: true
