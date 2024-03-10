@@ -106,7 +106,7 @@ body:
       label: ✔️ Pasos de Reproduccion
       description: si se requieren pre-requisitos agregarlos antes de los pasos de reproduccion 
       placeholder: |
-        Pre-requisitos: N/A
+        Pre-requisitos: Que es lo que necesito tener previamente configurado para poder ejecutar los pasos.
         1. Ingresar URL:
         2. Segundo paso:
         3. [...]
