@@ -21,7 +21,7 @@ body:
       label: ✔️ Descripcion
       placeholder: Comentar brevemente de que se trata el error y que se logre entender cuál es la falla
     validations:
-      required: true      
+      required: false      
 
   - type: input
     id: fecha_reporte
