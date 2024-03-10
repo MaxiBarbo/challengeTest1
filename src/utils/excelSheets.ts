@@ -19,4 +19,4 @@ async function accessExcelSheet(excelData: string): Promise<void> {
     console.log(sheetName);
 }
 
-export default accessExcelSheet;
+export default accessExcelSheet

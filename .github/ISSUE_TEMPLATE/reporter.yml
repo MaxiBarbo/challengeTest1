@@ -1,9 +1,8 @@
 name: Reporte de Bug
 description: template para crear un reporte de bug en issues de github
-title: "[Ingresar título del Bug]"
+title: "[Pantalla] TItulo descriptivo"
 labels: 
   - Bug
-projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - octocat
 body:
@@ -15,6 +14,14 @@ body:
       placeholder: ingrese id del caso de prueba
     validations:
       required: true
+
+  - type: input
+    id: descripcion
+    attributes:
+      label: ✔️ Descripcion
+      placeholder: Comentar brevemente de que se trata el error y que se logre entender cuál es la falla
+    validations:
+      required: true      
 
   - type: input
     id: fecha_reporte
@@ -35,6 +42,7 @@ body:
         - Crash
         - Performance
         - Contenido
+        - Accesibilidad
     validations:
       required: true
 
@@ -42,7 +50,7 @@ body:
     id: prioridad
     attributes:
       label: ✔️ Prioridad
-      description: 
+      description: prioridad
       options:
         - Baja
         - Media
@@ -55,7 +63,7 @@ body:
     id: Dispositivo
     attributes:
       label: ✔️ Dispositivo
-      description: 
+      description: dispositivo usado para testear
       options:
         - PC - Windows 
         - PC - Ubuntu
@@ -69,7 +77,7 @@ body:
     id: Navegador
     attributes:
       label: ✔️ Navegador
-      description: 
+      description: navegador usado para testear
       options:
         - Firefox
         - Chrome
@@ -131,21 +139,21 @@ body:
       required: true
 
   - type: input
-    id: url
-    attributes:
-      label: 🔗 Test Plan
-      description: Ingresar url 
-      placeholder: email@example.com
-    validations:
-      required: false
-
-  - type: input
     id: tester_qa
     attributes:
       label: ⚙️ Tester QA
       placeholder: nombre del tester
     validations:
       required: false
+
+  # - type: input
+  #   id: url
+  #   attributes:
+  #     label: 🔗 Test Plan
+  #     description: Ingresar url 
+  #     placeholder: email@example.com
+  #   validations:
+  #     required: false
 
   # - type: markdown
   #   attributes:

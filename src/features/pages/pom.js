@@ -1,7 +1,7 @@
 const { expect, assert } = require('chai');
 require('dotenv').config()
 const jwt = require('jsonwebtoken');
-const accessGoogleSheet = require('../pages/googleSheetAcces');
+// const accessGoogleSheet = require('../pages/googleSheetAcces');
 
 class Elements {
     constructor(page){
@@ -41,13 +41,13 @@ class Elements {
         const apiKey = 'AIzaSyBeuLvEvy5QXAiJnq-7YGa1TWTqYsBdJlU';
         const range = 'login!A1:J38';
 
-        let emailSheet = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 0);
-        let passSheet = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 1);
-        console.log(emailSheet)
-        console.log(passSheet)
+        // let emailSheet = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 0);
+        // let passSheet = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 1);
+        // console.log(emailSheet)
+        // console.log(passSheet)
 
-        await this.page.fill(this.usernameInputSelector, emailSheet);
-        await this.page.fill(this.passwordInputSelector, passSheet); 
+        await this.page.fill(this.usernameInputSelector, email);
+        await this.page.fill(this.passwordInputSelector, pass); 
     }
 
     async selectSortOption(string1,string2) {

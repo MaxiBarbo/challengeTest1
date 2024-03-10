@@ -5,7 +5,6 @@ class Functions {
     constructor(){
 
     }
-
     async apiFetch(URL,category) {
         let apiTask = URL
         let datos;

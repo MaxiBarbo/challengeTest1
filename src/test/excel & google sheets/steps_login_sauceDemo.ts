@@ -17,23 +17,23 @@ Before( { timeout: 10000 }, async () => {
     elements = new Elements(page)
 });
 
-Given('que he iniciado sesion en la url tienda SauceDemo {string}', async function (URL: string)  {
+Given('que estoy en la pagina de login en la tienda SauceDemo {string}', async function (URL: string)  {
     await page.goto(URL)
 });
 
-When('ingreso mi usuario {string} y contraseña {string}', async (user: string ,password: string) => {
+When('se ingresa usuario {string} y contraseña {string}', async (user: string ,password: string) => {
     elements.loginUser(user, password)
     await page.waitForTimeout(segundos)
     await page.locator('[data-test="login-button"]').click();
 });
 
 // Escenario @leer-sheets de excel y google
-Then('accedo a los datos parametrizados en Excel', async () => {
+Then('se accede a los datos parametrizados en Excel', async () => {
     elements.dataSheets()
 });
 
-Then('accedo a los datos parametrizados en google sheets', async () => {
-
+Then('se accede a los datos parametrizados en google sheets', async () => {
+    elements.googleSheet()
 });
 
 After( async () => {

@@ -42,14 +42,23 @@ export class Elements {
         await this.page.waitForSelector(Elements.PasswordInput)
         await this.page.fill(Elements.PasswordInput, password)
 
-        // console.log(userName)
-        // console.log(userPass)
     }
 
     public async dataSheets(){
         let excelData = 'src/templates/dataLogin.xlsx'
         let dataExcel = accessExcelSheet(excelData)
+    }
 
-        
+    public async googleSheet(){
+        let sheetName = 'login'
+        const spreadsheetId = '1N2_if3nb_-VFPVxs3g3n5j9L1Agtw886CivwWUpO9DM';
+        const apiKey = 'AIzaSyBeuLvEvy5QXAiJnq-7YGa1TWTqYsBdJlU';
+        const range = `${sheetName}!A1:J38`;
+        let userName = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 0)
+        let userPass = await accessGoogleSheet(spreadsheetId, apiKey, range, 1, 1)
+
+        // console.log(`Nombre de la hoja google sheet: ${sheetName}`)
+        // console.log(`Nombre de usuario obtenido de la  google sheet: ${userName}`)
+        // console.log(`Password de usuario obtenido de la google sheet: ${userPass}`)
     }
 }
