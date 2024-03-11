@@ -15,13 +15,13 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: descripcion
-    attributes:
-      label: ✔️ Descripcion
-      placeholder: Comentar brevemente de que se trata el error y que se logre entender cuál es la falla
-    validations:
-      required: false      
+  # - type: input
+  #   id: descripcion
+  #   attributes:
+  #     label: ✔️ Descripcion
+  #     placeholder: Comentar brevemente de que se trata el error y que se logre entender cuál es la falla
+  #   validations:
+  #     required: false      
 
   - type: input
     id: fecha_reporte
